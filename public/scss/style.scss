@@ -146,7 +146,8 @@ body {
   }
 
   a:hover:before,
-  a:active:before {
+  a:active:before,
+  a:focus:before {
     color: #fff;
     width: 220px;
     transition: all 0.2s ease;
