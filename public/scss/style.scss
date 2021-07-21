@@ -1,0 +1,561 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4089100, 2021-05-15T18:57:37-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BoubaRound-Black by HVD Fonts
+ * URL: https://www.myfonts.com/fonts/hvdfonts/bouba-round/black/
+ * Copyright: Copyright © 2020 by Hannes von Doehren. All rights reserved.
+ *
+ *
+ *
+ * © 2021 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3e650c");
+
+@font-face {
+  font-family: "BoubaRound-Black";
+  src: url("webFonts/BoubaRoundBlack/font.woff2") format("woff2"),
+    url("webFonts/BoubaRoundBlack/font.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  // min-height: 3000px;
+  // margin-top: 5000px;
+  background-color: #fff;
+}
+
+#mainSection {
+  // z-index: 0;
+  width: 100%;
+  overflow: hidden;
+
+  h1:first-of-type {
+    color: #3f5cbf;
+    font-size: 42px;
+    margin: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    padding: 100px 0;
+    z-index: 0;
+  }
+
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    border-bottom-left-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(72, 213, 229, 0.1) 0%,
+      rgba(211, 12, 123, 0.1) 100%
+    );
+    top: 0;
+    left: 60px;
+    z-index: -1;
+  }
+
+  .container {
+    padding: 0;
+    z-index: 10;
+  }
+
+  h1,
+  #typed {
+    font-family: "BoubaRound-Black", Poppins, sans-serif;
+    font-size: 80px;
+    color: #200c42;
+
+    span {
+      color: #f8b827;
+    }
+  }
+
+  .yellowLightning {
+    display: inline-block;
+    stroke: #f8b827;
+    stroke-width: 1.5px;
+    fill: none;
+    height: 42px;
+    margin-top: -18px;
+    transform: rotate(0deg);
+    margin-left: 8px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "BoubaRound-Black", Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #200c42;
+    width: 100%;
+    max-width: 220px;
+    padding: 20px 0;
+    background-color: none;
+    text-decoration: none;
+    border-radius: 60px;
+    position: relative;
+    z-index: 0;
+    transition: all 0.5s ease;
+    transition: background-color 0.2s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #f8b827;
+      width: 64px;
+      height: 64px;
+      border-radius: 60px;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .bolt {
+    opacity: 0;
+    margin-left: 15px;
+    transition: all 0.2s ease;
+  }
+
+  a:hover:before {
+    color: #fff;
+    width: 220px;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+
+  a:hover .bolt {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  // a:hover {
+  //   background-color: red;
+  // }
+}
+
+#mySkills {
+  .container {
+    // .row {
+    //   --bs-gutter-x: 1.5rem;
+    //   --bs-gutter-y: 0;
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    //   margin-top: calc(var(--bs-gutter-y) * -1);
+    //   margin-right: calc(var(--bs-gutter-x) / -2);
+    //   margin-left: calc(var(--bs-gutter-x) / -2);
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   align-content: center;
+    //   flex-direction: row;
+    // }
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h2 {
+      font-family: "BoubaRound-Black", "Poppins", sans-serif;
+      font-size: 60px;
+      color: #200c42;
+
+      span {
+        color: #f8b827;
+      }
+    }
+
+    h3 {
+      font-family: "BoubaRound-Black", "Poppins", sans-serif;
+      font-size: 32px;
+      color: #3f5cbf;
+      // -webkit-touch-callout: none;
+      // -webkit-user-select: none;
+      // -khtml-user-select: none;
+      // -moz-user-select: none;
+      // -ms-user-select: none;
+      // user-select: none;
+    }
+
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #200c42;
+      margin-bottom: 60px;
+      // -webkit-touch-callout: none;
+      // -webkit-user-select: none;
+      // -khtml-user-select: none;
+      // -moz-user-select: none;
+      // -ms-user-select: none;
+      // user-select: none;
+    }
+
+    .skillBox {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.15);
+      text-align: center;
+      margin: 0 auto;
+      max-width: 363px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .skillDescription {
+      border-top: solid 1px #e0e0e0;
+      padding: 0 40px 40px 40px;
+      background-color: #fff;
+      border-radius: 0 0 20px 20px;
+
+      p {
+        font-weight: 700;
+        margin-bottom: 0px;
+      }
+
+      ul {
+        list-style: none;
+        display: inline;
+
+        li {
+          display: inline-block;
+        }
+
+        li:first-of-type,
+        li:nth-of-type(2) {
+          float: left;
+        }
+
+        li:nth-of-type(2) {
+          padding-left: 10px;
+        }
+
+        li:last-of-type {
+          float: right;
+        }
+      }
+
+      .likeSaveIcons {
+        margin: 40px 0 20px 0;
+        position: relative;
+
+        button {
+          padding: 0;
+          background-color: transparent;
+          border: none;
+          // float: left;
+        }
+
+        button + button {
+          // float: right;
+        }
+        .heart {
+          stroke: #f45f5f;
+          fill: none;
+          height: 25px;
+          // float: left;
+          transition: all 0.2s ease;
+        }
+
+        .likes {
+          font-family: "BoubaRound-Black", "Poppins", sans-serif;
+          font-size: 17px;
+          margin-left: 0px;
+          color: #3f5cbf;
+          // position: absolute;
+          left: 35px;
+          opacity: 0.75;
+        }
+
+        .clickedHeart {
+          fill: #f45f5f;
+          transition: all 0.2s ease;
+          animation: 0.5s linear burst;
+        }
+
+        .heart:target {
+          fill: #f45f5f;
+          animation: 0.5s linear burst;
+        }
+
+        @keyframes burst {
+          0%,
+          10% {
+            transform: scale(1);
+            opacity: 0.5;
+            color: lavender;
+          }
+          45% {
+            transform: scale(0.2) rotate(30deg);
+            opacity: 0.75;
+          }
+          50% {
+            transform: scale(2) rotate(-37.5deg);
+            opacity: 1;
+            color: red;
+            text-shadow: 2px 2px 6px rgba(235, 9, 9, 0.5);
+          }
+          90%,
+          95% {
+            transform: scale(1) rotate(10deg);
+            text-shadow: none;
+          }
+          100% {
+            transform: rotate(-2.5deg);
+          }
+        }
+
+        .bookmark {
+          stroke: #f8b827;
+          fill: none;
+          height: 25px;
+          // float: right;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .clickedBookmark {
+          fill: #f8b827;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 36px;
+      margin: 80px auto 80px auto;
+      transition: transform 0.5s ease-in-out;
+
+      svg {
+        text-align: center;
+      }
+    }
+
+    .iconBox:hover {
+      transform: rotate(360deg) scale(0.8);
+    }
+
+    .designIcon {
+      background-color: #53d5e5;
+      box-shadow: 0px 7px 40px rgba(83, 213, 229, 0.7);
+      transition: all 0.7s ease;
+    }
+
+    .devIcon {
+      background-color: #f8b827;
+      box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+      transition: all 0.7s ease;
+    }
+
+    .illustrationIcon {
+      background-color: #d30c7b;
+      box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+      transition: all 0.7s ease;
+    }
+
+    .designIcon:hover,
+    .illustrationIcon:hover,
+    .devIcon:hover {
+      box-shadow: none;
+      transition: all 0.7s ease;
+    }
+  }
+}
+
+.container-fluid {
+  min-height: 580px;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(
+    to top,
+    rgba(248, 184, 39, 0.3),
+    rgba(72, 213, 229, 0.3)
+  );
+  // background-image: url("/img/mountain-bg.svg");
+  background-attachment: scroll;
+
+  .mountain {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    max-width: 672px;
+    margin-left: -336px;
+    width: 100%;
+    z-index: 2;
+  }
+  .sunMountain {
+    max-width: 358px;
+    position: absolute;
+    left: 51%;
+    top: -10%;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  .topBox {
+    max-width: 880px;
+    width: 100%;
+    margin-left: -440px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 0;
+  }
+
+  .bottomBox {
+    max-width: 880px;
+    width: 100%;
+    margin-left: -440px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 3;
+  }
+}
+
+#contactSection {
+  padding: 100px 0;
+  h2 {
+    font-family: "BoubaRound-Black", "Poppins", sans-serif;
+    font-size: 60px;
+    color: #200c42;
+
+    span {
+      color: #f8b827;
+    }
+  }
+
+  .container {
+    .col-sm-6 {
+      background-color: #fff;
+      border-radius: 0 20px 20px 0;
+      box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.15);
+      padding: 40px;
+    }
+
+    .purple {
+      background-color: #200c42;
+      border-radius: 20px 0 0 20px;
+    }
+  }
+
+  .form-container {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: "BoubaRound-Black", Poppins, sans-serif;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(212, 212, 212);
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #200c42;
+    transition: all 0.5s ease;
+  }
+
+  ::placeholder {
+    color: #ccc;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #3f5cbf;
+    padding-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .submit {
+    border: none;
+    border-radius: 36px;
+    background-color: #3f5cbf;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+  }
+
+  .submit:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+  }
+}
+
+#footerSection {
+  width: 100%;
+  overflow: hidden;
+
+  h1:first-of-type {
+    color: #3f5cbf;
+    font-size: 42px;
+    margin: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(211, 12, 123, 0.1) 0%,
+      rgba(72, 213, 229, 0.1) 100%
+    );
+    top: 0;
+    right: 60px;
+  }
+}

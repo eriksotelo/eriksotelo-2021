@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4089100, 2021-05-15T18:57:37-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BoubaRound-Black by HVD Fonts
+ * URL: https://www.myfonts.com/fonts/hvdfonts/bouba-round/black/
+ * Copyright: Copyright © 2020 by Hannes von Doehren. All rights reserved.
+ *
+ *
+ *
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3e650c");
+
+@font-face {
+  font-family: "BoubaRound-Black";
+  src: url('webFonts/BoubaRoundBlack/font.woff2') format('woff2'), url('webFonts/BoubaRoundBlack/font.woff') format('woff');
+}

@@ -1,0 +1,35 @@
+/* Parallax */
+.parallax .parallax-layer {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+}
+
+.parallax .parallax-layer.brighten {
+  filter: brightness(120%);
+}
+
+.parallax .parallax-layer.darken {
+  filter: brightness(40%);
+}
+
+.parallax .parallax-content {
+  z-index: 100;
+  color: white;
+  background-color: transparent;
+}
+
+.parallax .above-parallax {
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 1rem;
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 100;
+  position: relative;
+}
+
+.parallax {
+  overflow: hidden;
+}
+/* /Parallax */
