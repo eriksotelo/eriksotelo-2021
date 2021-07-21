@@ -109,7 +109,8 @@ body {
     opacity: 0;
     margin-left: 15px;
     transition: all 0.2s ease; }
-  #mainSection a:hover:before {
+  #mainSection a:hover:before,
+  #mainSection a:active:before {
     color: #fff;
     width: 220px;
     transition: all 0.2s ease; }
