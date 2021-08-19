@@ -40,10 +40,202 @@ body {
   // min-height: 3000px;
   // margin-top: 5000px;
   background-color: #fff;
+  position: relative;
+}
+
+.burger-container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #fff;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 7px 40px rgba(63, 92, 191, 0.45);
+  z-index: 1000;
+
+  .burger {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0;
+    float: none;
+    left: 25px;
+    top: 28px;
+  }
+
+  .burger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 160%;
+    width: 160%;
+    top: -30%;
+    left: -30%;
+  }
+
+  .burger-lines {
+    height: 7px;
+    margin: 0;
+  }
+
+  .burger.burger-squeeze.open .burger-lines:before,
+  .burger.burger-squeeze.open .burger-lines:after {
+    left: 0.4em;
+    background-color: #f8b827;
+  }
+
+  .burger.burger-squeeze .burger-lines,
+  .burger.burger-squeeze .burger-lines:after,
+  .burger.burger-squeeze .burger-lines:before {
+    height: 5px;
+  }
+
+  .burger.burger-squeeze.open .burger-lines,
+  .burger.burger-squeeze.open .burger-lines:after,
+  .burger.burger-squeeze.open .burger-lines:before {
+    width: 2rem;
+    height: 5px;
+  }
+
+  .burger .burger-lines,
+  .burger .burger-lines:after,
+  .burger .burger-lines:before {
+    background-color: #48d5e5;
+  }
+
+  .burger .burger-lines:before {
+    background-color: #f8b827;
+  }
+
+  .burger .burger-lines:after {
+    background-color: #3f5cbf;
+  }
+}
+
+nav {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  top: 0;
+
+  .container {
+    position: relative;
+
+    .col-sm-6:nth-of-type(2) {
+      position: relative;
+    }
+
+    img {
+      height: 30px;
+    }
+  }
+
+  ul {
+    top: 13px;
+    position: absolute;
+    list-style: none;
+    right: -94px;
+
+    span:nth-of-type(1) {
+      float: left;
+      margin-right: 24px;
+      transition: all 0.2s ease;
+    }
+
+    span:nth-of-type(2) {
+      position: absolute;
+      top: 16px;
+      right: 0;
+      padding-right: 18px;
+      margin-left: 24px;
+    }
+
+    .hideInit {
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
+
+    a {
+      display: inline-block;
+      text-align: center;
+      font-family: "BoubaRound-Black", Poppins, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff;
+      width: 100%;
+      max-width: 220px;
+      padding: 20px 0;
+      background-color: none;
+      text-decoration: none;
+      border-radius: 60px;
+      position: relative;
+      z-index: 0;
+      transition: all 0.5s ease;
+      transition: background-color 0.2s ease;
+      max-height: 64px;
+      margin-bottom: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        border-radius: 60px;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        transition: all 0.5s ease;
+        float: left;
+      }
+    }
+
+    .paynesGrey {
+      &::before {
+        background-color: #200c42;
+      }
+    }
+
+    .oceanBlue {
+      &::before {
+        background-color: #3f5cbf;
+      }
+    }
+
+    .pinneapleYellow {
+      &::before {
+        background-color: #f8b827;
+      }
+    }
+
+    .sunsetVista {
+      &::before {
+        background-color: #d30c7b;
+      }
+    }
+
+    a:hover:before,
+    a:active:before,
+    a:focus:before {
+      color: #fff;
+      width: 180px;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    a:hover .hideInit {
+      opacity: 1;
+      transition: all 0.2s ease;
+    }
+  }
 }
 
 #mainSection {
-  // z-index: 0;
   width: 100%;
   overflow: hidden;
 
@@ -55,7 +247,7 @@ body {
 
   .wrapper {
     position: relative;
-    padding: 100px 0;
+    padding: 190px 0;
     z-index: 0;
   }
 
@@ -76,8 +268,8 @@ body {
   }
 
   .container {
-    padding: 0;
     z-index: 10;
+    position: relative;
   }
 
   h1,
@@ -150,6 +342,7 @@ body {
   a:focus:before {
     color: #fff;
     width: 220px;
+    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
     transition: all 0.2s ease;
   }
 
@@ -410,6 +603,7 @@ body {
   );
   // background-image: url("/img/mountain-bg.svg");
   background-attachment: scroll;
+  z-index: -1;
 
   .mountain {
     position: absolute;
