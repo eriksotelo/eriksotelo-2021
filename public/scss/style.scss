@@ -81,21 +81,21 @@ body {
 
   .burger.burger-squeeze.open .burger-lines:before,
   .burger.burger-squeeze.open .burger-lines:after {
-    left: 0.4em;
+    left: 0.3em;
     background-color: #f8b827;
   }
 
   .burger.burger-squeeze .burger-lines,
   .burger.burger-squeeze .burger-lines:after,
   .burger.burger-squeeze .burger-lines:before {
-    height: 5px;
+    height: 6px;
   }
 
   .burger.burger-squeeze.open .burger-lines,
   .burger.burger-squeeze.open .burger-lines:after,
   .burger.burger-squeeze.open .burger-lines:before {
-    width: 2rem;
-    height: 5px;
+    width: 35px;
+    height: 6px;
   }
 
   .burger .burger-lines,
@@ -728,6 +728,13 @@ nav {
 #footerSection {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(211, 12, 123, 0.1) 0%,
+    rgba(72, 213, 229, 0.1) 100%
+  );
+  background-position: right -60px;
 
   h1:first-of-type {
     color: #3f5cbf;
@@ -735,9 +742,14 @@ nav {
     margin: 0;
   }
 
+  .container {
+    z-index: 1000;
+  }
+
   .wrapper {
     position: relative;
-    padding: 100px 0;
+    padding: 0;
+    z-index: 0;
   }
 
   .wrapper::before {
@@ -746,12 +758,87 @@ nav {
     border-top-right-radius: 50px;
     width: 100%;
     height: 100%;
+    background: #200c42;
+    top: 0;
+    right: 60px;
+    z-index: -1;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  img {
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  // .wrapper2 {
+  //   position: relative;
+  //   padding: 100px 0;
+  //   z-index: 2;
+  // }
+
+  // .wrapper2::before {
+  //   content: "";
+  //   position: absolute;
+  //   border-top-right-radius: 50px;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: #200c42;
+  //   top: 0;
+  //   right: 60px;
+  // }
+}
+
+#socialFooterWrap {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerSocialMedia {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    border-top-left-radius: 50px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
       90deg,
       rgba(211, 12, 123, 0.1) 0%,
       rgba(72, 213, 229, 0.1) 100%
     );
     top: 0;
-    right: 60px;
+    left: 60px;
+    z-index: -1;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+
+    li {
+      display: inline;
+      margin-right: 40px;
+    }
+
+    li:last-of-type {
+      margin-right: 0px;
+    }
   }
 }

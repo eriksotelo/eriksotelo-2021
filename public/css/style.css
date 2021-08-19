@@ -65,17 +65,17 @@ body {
     margin: 0; }
   .burger-container .burger.burger-squeeze.open .burger-lines:before,
   .burger-container .burger.burger-squeeze.open .burger-lines:after {
-    left: 0.4em;
+    left: 0.3em;
     background-color: #f8b827; }
   .burger-container .burger.burger-squeeze .burger-lines,
   .burger-container .burger.burger-squeeze .burger-lines:after,
   .burger-container .burger.burger-squeeze .burger-lines:before {
-    height: 5px; }
+    height: 6px; }
   .burger-container .burger.burger-squeeze.open .burger-lines,
   .burger-container .burger.burger-squeeze.open .burger-lines:after,
   .burger-container .burger.burger-squeeze.open .burger-lines:before {
-    width: 2rem;
-    height: 5px; }
+    width: 35px;
+    height: 6px; }
   .burger-container .burger .burger-lines,
   .burger-container .burger .burger-lines:after,
   .burger-container .burger .burger-lines:before {
@@ -488,22 +488,70 @@ nav {
 
 #footerSection {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(90deg, rgba(211, 12, 123, 0.1) 0%, rgba(72, 213, 229, 0.1) 100%);
+  background-position: right -60px; }
   #footerSection h1:first-of-type {
     color: #3f5cbf;
     font-size: 42px;
     margin: 0; }
+  #footerSection .container {
+    z-index: 1000; }
   #footerSection .wrapper {
     position: relative;
-    padding: 100px 0; }
+    padding: 0;
+    z-index: 0; }
   #footerSection .wrapper::before {
     content: "";
     position: absolute;
     border-top-right-radius: 50px;
     width: 100%;
     height: 100%;
+    background: #200c42;
+    top: 0;
+    right: 60px;
+    z-index: -1; }
+  #footerSection p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #fff; }
+  #footerSection img {
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
+#socialFooterWrap {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+
+.footerSocialMedia {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .footerSocialMedia .wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 0; }
+  .footerSocialMedia .wrapper::before {
+    content: "";
+    position: absolute;
+    border-top-left-radius: 50px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(90deg, rgba(211, 12, 123, 0.1) 0%, rgba(72, 213, 229, 0.1) 100%);
     top: 0;
-    right: 60px; }
+    left: 60px;
+    z-index: -1; }
+  .footerSocialMedia ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0; }
+    .footerSocialMedia ul li {
+      display: inline;
+      margin-right: 40px; }
+    .footerSocialMedia ul li:last-of-type {
+      margin-right: 0px; }
 
 /*# sourceMappingURL=style.css.map */
