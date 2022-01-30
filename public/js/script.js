@@ -72,9 +72,11 @@ burgerBtn.addEventListener("click", function (e) {
 
 nav.addEventListener("click", function () {
   // this.classList.toggle("display");
-  burgerBtn.classList.toggle("open");
-  this.classList.add("animate__rollOut");
-  this.classList.remove("animate__rollIn");
+  if (viewportWidth < 992) {
+    burgerBtn.classList.toggle("open");
+    this.classList.add("animate__rollOut");
+    this.classList.remove("animate__rollIn");
+  }
 });
 
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
