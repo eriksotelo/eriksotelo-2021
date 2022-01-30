@@ -2,13 +2,11 @@
   "name": "eriksotelo.com",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "docker:image": "docker build -f .docker/Dockerfile -t nextjs .",
-    "docker:start": "docker run -p 3000:80 nextjs"
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
