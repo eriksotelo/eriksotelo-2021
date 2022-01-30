@@ -5,7 +5,7 @@ const { body, validationResult } = require("express-validator");
 
 const nodemailer = require("nodemailer");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5500;
 
 // Middleware
 app.use(express.static("public"));
