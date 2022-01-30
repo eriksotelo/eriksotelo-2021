@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Erik Sotelo | Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/shadowllax.css" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <nav class="nav animate__animated">
       <ul>
         <li>
-          <a class="paynesGrey" href=""
+          <a class="paynesGrey" href="#mainSection"
             ><span class="hideInit">welcome</span
             ><span>
               <svg
@@ -101,14 +102,14 @@
           ><span class="navIcon"></span>
         </li>
         <li>
-          <a class="sunsetVista" href=""><span>contact me</span></a
+          <a class="sunsetVista" href=""><span>contact</span></a
           ><span class="navIcon"></span>
         </li>
       </ul>
     </nav>
 
     <div class="burger-container">
-      <div class="burger burger-squeeze">
+      <div id="burgerBtn" class="burger burger-squeeze">
         <div class="burger-lines"></div>
       </div>
     </div>
@@ -167,7 +168,7 @@
                 about building excellent websites that improve the lives of
                 those around me.
               </p>
-              <a class="link" href="#contactSection"
+              <a class="link" href="#latestWork"
                 >See my work<span class="bolt">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +187,7 @@
               </a>
             </div>
             <div class="col-lg-6 mainIllustration">
-              <img src="img/erik-sotelo.png" alt="Erik Sotelo Illustration" />
+              <img src="img/erik-2022.png" alt="Erik Sotelo Illustration" />
             </div>
           </div>
         </div>
@@ -196,7 +197,7 @@
     <div id="mySkills">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-8">
             <h2>my skills<span class="yellow">.</span></h2>
             <p>
               I’m a web designer, front‑end developer and illustrator focused on
@@ -678,89 +679,433 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="parallax">
-            <svg
-              class="sunMountain parallax-layer"
-              data-depth-factor="7"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 358 358"
-            >
-              <defs>
-                <linearGradient
-                  id="linear-gradient"
-                  x1="0.273"
-                  y1="0.791"
-                  x2="0.938"
-                  y2="0.24"
-                  gradientUnits="objectBoundingBox"
-                >
-                  <stop offset="0" stop-color="#d30c7b" />
-                  <stop offset="1" stop-color="#d30c7b" stop-opacity="0.502" />
-                </linearGradient>
-              </defs>
-              <g
-                id="Group_88"
-                data-name="Group 88"
-                transform="translate(-724.345 -2015)"
+    <div id="parallaxMountain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="parallax">
+              <svg
+                class="sunMountain parallax-layer"
+                data-depth-factor="7"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 358 358"
               >
-                <circle
-                  id="Ellipse_462"
-                  data-name="Ellipse 462"
-                  cx="179"
-                  cy="179"
-                  r="179"
-                  transform="translate(724.345 2015)"
-                  fill="#fff"
-                />
-                <circle
-                  id="Ellipse_39"
-                  data-name="Ellipse 39"
-                  cx="179"
-                  cy="179"
-                  r="179"
-                  transform="translate(724.345 2015)"
-                  fill="url(#linear-gradient)"
-                />
-              </g>
-            </svg>
-
-            <img class="mountain" src="img/mountain.svg" alt="" />
-            <img
-              class="topBox parallax-layer"
-              data-depth-factor="-6"
-              src="img/top-box.svg"
-              alt=""
-            />
-            <img
-              class="bottomBox parallax-layer"
-              data-depth-factor="-6"
-              src="img/bottom-box.svg"
-              alt=""
-            />
+                <defs>
+                  <linearGradient
+                    id="linear-gradient"
+                    x1="0.273"
+                    y1="0.791"
+                    x2="0.938"
+                    y2="0.24"
+                    gradientUnits="objectBoundingBox"
+                  >
+                    <stop offset="0" stop-color="#d30c7b" />
+                    <stop offset="1" stop-color="#d30c7b" stop-opacity="0.502" />
+                  </linearGradient>
+                </defs>
+                <g
+                  id="Group_88"
+                  data-name="Group 88"
+                  transform="translate(-724.345 -2015)"
+                >
+                  <circle
+                    id="Ellipse_462"
+                    data-name="Ellipse 462"
+                    cx="179"
+                    cy="179"
+                    r="179"
+                    transform="translate(724.345 2015)"
+                    fill="#fff"
+                  />
+                  <circle
+                    id="Ellipse_39"
+                    data-name="Ellipse 39"
+                    cx="179"
+                    cy="179"
+                    r="179"
+                    transform="translate(724.345 2015)"
+                    fill="url(#linear-gradient)"
+                  />
+                </g>
+              </svg>
+  
+              <img class="mountain" src="img/mountain.svg" alt="" />
+              <img
+                class="topBox parallax-layer"
+                data-depth-factor="-6"
+                src="img/top-box.svg"
+                alt=""
+              />
+              <img
+                class="bottomBox parallax-layer"
+                data-depth-factor="-6"
+                src="img/bottom-box.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div id="latestWork">
-      <!-- Button trigger modal -->
-      <div
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Launch demo modal
-      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>latest work<span>.</span></h2>
+            <p>
+              I’m a web designer, front‑end developer and illustrator focused on
+              crafting clean & user‑friendly experiences. I am passionate about
+              building excellent websites that improve the lives of those around
+              me.
+            </p>
+          </div>
+        </div>
+        <div class="row projectWrapper">
+          <div class="col-sm-5 offset-sm-2 projectImg1">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+          <div class="col-sm-5 projectPadding1">
+            <h3>landing page<span>.</span></h3>
+            <p>Illustration, Web Design, Development</p>
 
-      <!-- Modal -->
+            <!-- Button trigger modal -->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              View project
+            </div>
+          </div>
+        </div>
+
+        <div class="row projectWrapper">
+          <div class="col-sm-5 projectPadding2">
+            <h3>logo design<span>.</span></h3>
+            <p>Design, Illustration</p>
+
+            <!-- Button trigger modal 2-->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              View project
+            </div>
+          </div>
+          <div class="col-sm-5 projectImg2">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+        </div>
+
+        <div class="row projectWrapper">
+          <div class="col-sm-5 offset-sm-2 projectImg3">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+          <div class="col-sm-5 projectPadding3">
+            <h3>logo design<span>.</span></h3>
+            <p>Design, Illustration</p>
+
+            <!-- Button trigger modal 3-->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              View project
+            </div>
+          </div>
+        </div>
+
+        <div class="row projectWrapper">
+          <div class="col-sm-5 projectPadding4">
+            <h3>landing page<span>.</span></h3>
+            <p>Illustration, Web Design, Development</p>
+
+            <!-- Button trigger modal 4-->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal4"
+            >
+              View project
+            </div>
+          </div>
+          <div class="col-sm-5 projectImg4">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+        </div>
+
+        <div class="row projectWrapper">
+          <div class="col-sm-5 offset-sm-2 projectImg5">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+          <div class="col-sm-5 projectPadding5">
+            <h3>logo design<span>.</span></h3>
+            <p>Design, Illustration</p>
+
+            <!-- Button trigger modal 5-->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal5"
+            >
+              View project
+            </div>
+          </div>
+        </div>
+
+        <div class="row projectWrapper noBtmMargin">
+          <div class="col-sm-5 projectPadding6">
+            <h3>logo design<span>.</span></h3>
+            <p>Design, Illustration</p>
+
+            <!-- Button trigger modal 6-->
+            <div
+              class="btn btn-yellow"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal6"
+            >
+              View project
+            </div>
+          </div>
+          <div class="col-sm-5 projectImg6">
+            <img
+              src="img/the-sam-and-time-taco-podcast-logo-transparent-bg.png"
+              alt="The Same & Tim Taco Podcast Logo"
+            />
+          </div>
+        </div>
+
+
+          <!-- Modal -->
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 12.728 12.728"
+              >
+                <g
+                  id="Group_136"
+                  data-name="Group 136"
+                  transform="translate(-565.685 -266.579) rotate(45)"
+                >
+                  <line
+                    id="Line_37"
+                    data-name="Line 37"
+                    y2="16"
+                    transform="translate(597.5 -219.5)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_38"
+                    data-name="Line 38"
+                    y2="16"
+                    transform="translate(605.5 -211.5) rotate(90)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </button>
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    The Same and Tim Taco Podcast Logo
+                  </h5>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 12.728 12.728"
+              >
+                <g
+                  id="Group_136"
+                  data-name="Group 136"
+                  transform="translate(-565.685 -266.579) rotate(45)"
+                >
+                  <line
+                    id="Line_37"
+                    data-name="Line 37"
+                    y2="16"
+                    transform="translate(597.5 -219.5)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="Line_38"
+                    data-name="Line 38"
+                    y2="16"
+                    transform="translate(605.5 -211.5) rotate(90)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </button>
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    The Same and Tim Taco Podcast Logo
+                  </h5>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="modalImg"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 3 -->
+
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 12.728 12.728"
+            >
+              <g
+                id="Group_136"
+                data-name="Group 136"
+                transform="translate(-565.685 -266.579) rotate(45)"
+              >
+                <line
+                  id="Line_37"
+                  data-name="Line 37"
+                  y2="16"
+                  transform="translate(597.5 -219.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                />
+                <line
+                  id="Line_38"
+                  data-name="Line 38"
+                  y2="16"
+                  transform="translate(605.5 -211.5) rotate(90)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </button>
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  The Same and Tim Taco Podcast Logo
+                </h5>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal 4 -->
 
       <div
         class="modal fade"
-        id="exampleModal"
+        id="exampleModal4"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -771,7 +1116,10 @@
           data-bs-dismiss="modal"
           aria-label="Close"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.728 12.728">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 12.728 12.728"
+          >
             <g
               id="Group_136"
               data-name="Group 136"
@@ -819,123 +1167,197 @@
         </div>
       </div>
 
-      <!-- Button trigger modal 2-->
-      <div
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal2"
-      >
-        Launch demo modal
-      </div>
 
-      <!-- Modal 2 -->
+    <!-- Modal 5 -->
 
-      <div
-        class="modal fade"
-        id="exampleModal2"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
+    <div
+      class="modal fade"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
       >
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 12.728 12.728"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.728 12.728">
-            <g
-              id="Group_136"
-              data-name="Group 136"
-              transform="translate(-565.685 -266.579) rotate(45)"
+          <g
+            id="Group_136"
+            data-name="Group 136"
+            transform="translate(-565.685 -266.579) rotate(45)"
+          >
+            <line
+              id="Line_37"
+              data-name="Line 37"
+              y2="16"
+              transform="translate(597.5 -219.5)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+            />
+            <line
+              id="Line_38"
+              data-name="Line 38"
+              y2="16"
+              transform="translate(605.5 -211.5) rotate(90)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </button>
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              The Same and Tim Taco Podcast Logo
+            </h5>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
             >
-              <line
-                id="Line_37"
-                data-name="Line 37"
-                y2="16"
-                transform="translate(597.5 -219.5)"
-                fill="none"
-                stroke="#fff"
-                stroke-width="2"
-              />
-              <line
-                id="Line_38"
-                data-name="Line 38"
-                y2="16"
-                transform="translate(605.5 -211.5) rotate(90)"
-                fill="none"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-          </svg>
-        </button>
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                The Same and Tim Taco Podcast Logo
-              </h5>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="modalImg"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="contactSection">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>contact me<span>.</span></h2>
-            <p>
-              I’m a web designer, front‑end developer and illustrator focused on
-              crafting clean & user‑friendly experiences. I am passionate about
-              building excellent websites that improve the lives of those around
-              me.
-            </p>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="form-container">
-              <h3>Say hello!</h3>
-              <form class="contact-form">
-                <input type="text" id="name" placeholder="Full name" /><br />
-                <input type="email" id="email" placeholder="Email" /><br />
-                <input type="test" id="subject" placeholder="Subject" /><br />
-                <input
-                  type="text"
-                  id="phonenumber"
-                  placeholder="Phone Number (optional)"
-                /><br />
-                <textarea
-                  id="message"
-                  placeholder="Message..."
-                  cols="30"
-                  rows="8"
-                ></textarea
-                ><br />
-                <a href=""
-                  ><input type="submit" class="submit" value="Send Message"
-                /></a>
-              </form>
+    <!-- Modal 6 -->
+
+    <div
+      class="modal fade"
+      id="exampleModal6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 12.728 12.728"
+        >
+          <g
+            id="Group_136"
+            data-name="Group 136"
+            transform="translate(-565.685 -266.579) rotate(45)"
+          >
+            <line
+              id="Line_37"
+              data-name="Line 37"
+              y2="16"
+              transform="translate(597.5 -219.5)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+            />
+            <line
+              id="Line_38"
+              data-name="Line 38"
+              y2="16"
+              transform="translate(605.5 -211.5) rotate(90)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </button>
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              The Same and Tim Taco Podcast Logo
+            </h5>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+              
+  </div>
+</div>
+
+        <div id="contactSection">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>contact me<span>.</span></h2>
+                <p>
+                  I’m a web designer, front‑end developer and illustrator
+                  focused on crafting clean & user‑friendly experiences. I am
+                  passionate about building excellent websites that improve the
+                  lives of those around me.
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-container">
+                  <h3>Say hello!</h3>
+                  <form class="contact-form" id="myForm" name="myForm">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Full name"
+                      required
+                    /><br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    /><br />
+                    <input
+                      type="text"
+                      id="subject"
+                      placeholder="Subject"
+                    /><br />
+                    <input
+                      type="text"
+                      id="phonenumber"
+                      placeholder="Phone Number (optional)"
+                    /><br />
+                    <textarea
+                      id="message"
+                      placeholder="Message..."
+                      cols="30"
+                      rows="8"
+                    ></textarea
+                    ><br />
+                    <a href=""
+                      ><input type="submit" class="submit" value="Send Message"
+                    /></a>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -943,7 +1365,7 @@
     </div>
 
     <!-- <div id="socialFooterWrap"> -->
-    <div class="footerSocialMedia">
+    <div id="footerSocialMedia">
       <div class="wrapper">
         <div class="container">
           <div class="row">
@@ -1005,7 +1427,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <p>© 2021 eriksotelo.com. All Rights Reserved.</p>
+              <p>© 2022 eriksotelo.com. All Rights Reserved.</p>
             </div>
             <div class="col-sm-6 footerLogo">
               <img src="img/erik-logo-white.png" alt="" />
@@ -1038,21 +1460,34 @@
         showCursor: false,
       });
     </script>
-    <script>
+    <!-- <script>
+      const list = document.getElementsByClassName("burger");
       document.addEventListener("DOMContentLoaded", function (event) {
-        const list = document.getElementsByClassName("burger");
 
         for (const element of list)
           element.addEventListener("click", function (e) {
             element.classList.toggle("open");
           });
       });
-    </script>
-
+    </script> -->
     <script>
       $(".modal").on("hide.bs.modal", function (e) {
         $(".modal-content").scrollTop(0);
       });
+    </script>
+    <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["name"].value;
+        var y = document.forms["myForm"]["email"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+        if (y == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+      }
     </script>
   </body>
 </html>

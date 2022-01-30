@@ -46,6 +46,7 @@ for (var i = 0; i < bookmark.length; i++) {
     this.classList.toggle("clickedBookmark");
   });
 }
+
 // Add or remove like
 
 // for (var i = 0; i < likes.length; i++) {
@@ -53,3 +54,47 @@ for (var i = 0; i < bookmark.length; i++) {
 //     console.log(this.closest("div"));
 //   });
 // }
+
+const burgerBtn = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
+
+burgerBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  this.classList.toggle("open");
+  if (this.classList.contains("open")) {
+    nav.classList.remove("animate__rollOut");
+    nav.classList.add("display", "animate__rollIn");
+  } else {
+    nav.classList.remove("animate__rollIn");
+    nav.classList.add("animate__rollOut");
+  }
+});
+
+nav.addEventListener("click", function () {
+  // this.classList.toggle("display");
+  burgerBtn.classList.toggle("open");
+  this.classList.add("animate__rollOut");
+  this.classList.remove("animate__rollIn");
+});
+
+var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+// if (viewportWidth > 992) {
+//   console.log("Wide viewport");
+// } else {
+//   console.log("Small viewport");
+// }
+
+window.addEventListener(
+  "resize",
+  function () {
+    viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (viewportWidth > 992) {
+      console.log("Wide viewport");
+      nav.classList.remove("display", "animate__rollOut", "animate__rollIn");
+      burgerBtn.classList.remove("open");
+    } else {
+      console.log("Small viewport");
+    }
+  },
+  false
+);
