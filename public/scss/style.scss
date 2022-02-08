@@ -86,8 +86,8 @@ body {
   bottom: 80px;
   right: 40px;
   background: #fff;
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   box-shadow: 0px 7px 40px rgba(63, 92, 191, 0.45);
   z-index: 1000;
@@ -100,18 +100,18 @@ body {
     height: 30px;
     margin: 0;
     float: none;
-    left: 25px;
-    top: 28px;
+    left: 20px;
+    top: 23px;
   }
 
   .burger:after {
     content: "";
     display: block;
     position: absolute;
-    height: 90px;
-    width: 90px;
-    top: -28px;
-    left: -25px;
+    height: 80px;
+    width: 80px;
+    // top: -23px;
+    // left: -20px;
   }
 
   .burger-lines {
@@ -180,6 +180,7 @@ nav {
     position: absolute;
     list-style: none;
     right: 30px;
+    margin-bottom: 0;
 
     span:nth-of-type(1) {
       float: left;
@@ -1610,7 +1611,7 @@ nav {
   .nav {
     display: none;
     ul {
-      bottom: 190px;
+      bottom: 165px;
       top: initial;
     }
   }
