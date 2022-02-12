@@ -338,7 +338,7 @@ nav {
 
     img {
       width: 100%;
-      max-width: 375px;
+      max-width: 100%;
     }
   }
 
@@ -414,6 +414,12 @@ nav {
     opacity: 0;
     margin-left: 15px;
     transition: all 0.2s ease;
+  }
+
+  .yellowDots {
+    position: absolute;
+    bottom: 120px;
+    left: -120px;
   }
 
   a:hover:before,
@@ -941,10 +947,6 @@ nav {
     padding-top: 40px;
     z-index: 10000;
 
-    .modal-body {
-      min-height: 1600px;
-    }
-
     .btn-close {
       position: absolute;
       top: 14px;
@@ -985,17 +987,53 @@ nav {
       overflow-y: scroll;
       z-index: 1;
 
-      .modalImg {
-        min-height: 800px;
-        max-width: 100%;
+      .col-sm-12 {
+        text-align: center;
+      }
+
+      .modalImg img {
         width: 100%;
-        background-color: red;
+        max-width: 960px;
         border-radius: 20px;
+        box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.27);
       }
     }
 
     .modal-header {
       padding: 20px;
+      justify-content: center;
+
+      .modal-title {
+        text-align: center;
+      }
+    }
+
+    .modal-body {
+      .container {
+        padding: 100px 0;
+      }
+    }
+
+    .modal-signature {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      margin-top: 60px;
+
+      img {
+        width: 72px;
+        height: 72px;
+        margin: 0 24px;
+        border-radius: 50%;
+      }
+    }
+
+    .line {
+      width: 100%;
+      border: 1px solid #e7e7e9;
     }
   }
 

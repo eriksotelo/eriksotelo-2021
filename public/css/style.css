@@ -223,7 +223,7 @@ nav {
     align-content: center; }
     #mainSection .mainIllustration img {
       width: 100%;
-      max-width: 375px; }
+      max-width: 100%; }
   #mainSection .typedHeight {
     height: 108px;
     margin-bottom: 30px; }
@@ -283,6 +283,10 @@ nav {
     opacity: 0;
     margin-left: 15px;
     transition: all 0.2s ease; }
+  #mainSection .yellowDots {
+    position: absolute;
+    bottom: 120px;
+    left: -120px; }
   #mainSection a:hover:before,
   #mainSection a:active:before,
   #mainSection a:focus:before {
@@ -631,8 +635,6 @@ nav {
 #latestWork .modal {
   padding-top: 40px;
   z-index: 10000; }
-  #latestWork .modal .modal-body {
-    min-height: 1600px; }
   #latestWork .modal .btn-close {
     position: absolute;
     top: 14px;
@@ -664,14 +666,36 @@ nav {
     border-top-left-radius: 12px;
     overflow-y: scroll;
     z-index: 1; }
-    #latestWork .modal .modal-content .modalImg {
-      min-height: 800px;
-      max-width: 100%;
+    #latestWork .modal .modal-content .col-sm-12 {
+      text-align: center; }
+    #latestWork .modal .modal-content .modalImg img {
       width: 100%;
-      background-color: red;
-      border-radius: 20px; }
+      max-width: 960px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.27); }
   #latestWork .modal .modal-header {
-    padding: 20px; }
+    padding: 20px;
+    justify-content: center; }
+    #latestWork .modal .modal-header .modal-title {
+      text-align: center; }
+  #latestWork .modal .modal-body .container {
+    padding: 100px 0; }
+  #latestWork .modal .modal-signature {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px; }
+    #latestWork .modal .modal-signature img {
+      width: 72px;
+      height: 72px;
+      margin: 0 24px;
+      border-radius: 50%; }
+  #latestWork .modal .line {
+    width: 100%;
+    border: 1px solid #e7e7e9; }
 #latestWork .btn-close:hover {
   transition: opacity 0.2s ease; }
 #latestWork .btn-yellow {
