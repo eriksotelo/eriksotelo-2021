@@ -1120,6 +1120,8 @@ nav {
     width: 100%; }
   #latestWork .container .projectWrapper h3 {
     font-size: 32px; }
+  #latestWork .offset-sm-2 {
+    margin: 0; }
 
   #mainSection .wrapper::before {
     left: 0px; }
