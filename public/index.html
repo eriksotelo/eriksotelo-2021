@@ -1556,16 +1556,6 @@
         showCursor: false,
       });
     </script>
-    <!-- <script>
-      const list = document.getElementsByClassName("burger");
-      document.addEventListener("DOMContentLoaded", function (event) {
-
-        for (const element of list)
-          element.addEventListener("click", function (e) {
-            element.classList.toggle("open");
-          });
-      });
-    </script> -->
     <script>
       $(".modal").on("hide.bs.modal", function (e) {
         $(".modal-content").scrollTop(0);
@@ -1585,20 +1575,10 @@
         }
       }
     </script>
-    <!-- <script>
+    <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 300
       });
-      </script> -->
-      <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  behavior: 'smooth'
-              });
-          });
-      });
-        </script>
+      </script>
   </body>
 </html>
