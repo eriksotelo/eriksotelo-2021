@@ -43,6 +43,9 @@ body {
   position: relative;
 
   .container {
+    padding-right: 20px;
+    padding-left: 20px;
+
     h2 {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
       font-size: 60px;
@@ -739,12 +742,13 @@ nav {
 #latestWork {
   .container {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
 
     .projectWrapper {
       border-radius: 20px;
       margin-bottom: 60px;
-      padding-left: 0;
+      padding-left: 20px;
+      padding-right: 20px;
       display: flex;
 
       h3 {
@@ -768,7 +772,7 @@ nav {
         z-index: 1000;
       }
 
-      .col-sm-5 {
+      .col-md-5 {
         position: relative;
         z-index: 1;
       }
@@ -943,6 +947,13 @@ nav {
     // }
   }
 
+  .projectImg2:after {
+    background: url("../img/podcast-logo-preview.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+
   .modal {
     padding-top: 40px;
     z-index: 10000;
@@ -1002,16 +1013,55 @@ nav {
     .modal-header {
       padding: 20px;
       justify-content: center;
+      position: relative;
+      // width: 100%;
+      // z-index: 100000;
+      // background-color: #fff;
 
       .modal-title {
         text-align: center;
+        font-family: "BoubaRound-Black", "Poppins", sans-serif;
+        font-size: 24px;
+        color: #3f5cbf;
       }
     }
 
     .modal-body {
+      background-color: #fff;
+      overflow-y: initial;
+      padding: 0;
       .container {
         padding: 100px 0;
+
+        p {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          color: #200c42;
+          margin: 60px 0 40px 0;
+        }
       }
+
+      .modal-outro p:first-of-type {
+        text-align: center;
+        font-family: "BoubaRound-Black", "Poppins", sans-serif;
+        font-size: 28px;
+        color: #200c42;
+        margin: 20px 0 0 0;
+      }
+
+      .modal-outro p:nth-of-type(2) {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #200c42;
+        margin: 10px 0 60px 0;
+      }
+    }
+
+    .modal-footer {
+      display: none;
+      background-color: #fff;
     }
 
     .modal-signature {
@@ -1024,8 +1074,8 @@ nav {
       margin-top: 60px;
 
       img {
-        width: 72px;
-        height: 72px;
+        width: 60px;
+        height: 60px;
         margin: 0 24px;
         border-radius: 50%;
       }
@@ -1103,11 +1153,13 @@ nav {
 
 #contactSection {
   padding: 100px 0;
+  position: relative;
 
   h2 {
     font-family: "BoubaRound-Black", "Poppins", sans-serif;
     font-size: 60px;
     color: #200c42;
+    text-align: left;
 
     span {
       color: #f8b827;
@@ -1128,6 +1180,7 @@ nav {
     font-size: 16px;
     color: #200c42;
     margin-bottom: 0;
+    text-align: left;
   }
 
   a {
@@ -1164,6 +1217,32 @@ nav {
       transition: all 0.5s ease;
     }
   }
+
+  .col-lg-6 {
+    background-color: none;
+    text-align: center;
+  }
+
+  .contactIllustration {
+    background-image: url(../img/contact-beach-bg-03.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    height: 350px;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    z-index: -10000;
+    height: 350px;
+    top: 306px;
+    left: 0;
+  }
+
+  // img {
+  //   width: 100%;
+  //   max-width: 460px;
+  //   margin-top: 60px;
+  // }
 
   input.submit {
     margin: 0;
@@ -1208,7 +1287,7 @@ nav {
 
   .container {
     .col-lg-6:first-of-type {
-      background-color: #fff;
+      background-color: none;
     }
 
     .col-lg-6:nth-of-type(2) {
@@ -1222,7 +1301,6 @@ nav {
   .form-container {
     position: relative;
     width: 100%;
-    background-color: #fff;
     margin: 0 auto;
     text-align: center;
 
@@ -1244,6 +1322,7 @@ nav {
     font-size: 18px;
     color: #200c42;
     transition: all 0.5s ease;
+    background-color: transparent;
   }
 
   ::placeholder {
@@ -1302,6 +1381,10 @@ nav {
 
   .footerLogo {
     justify-content: flex-end;
+  }
+
+  .rightsReserved {
+    justify-content: flex-start;
   }
 
   .wrapper {
@@ -1406,12 +1489,52 @@ nav {
   display: inline-block !important;
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1020px) {
+  #mainSection {
+    .wrapper::before {
+      left: 20px;
+    }
+  }
+  #footerSocialMedia {
+    .wrapper::before {
+      left: 20px;
+    }
+  }
+  #footerSection {
+    .wrapper::before {
+      right: 20px;
+    }
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 576px and down) */
+@media only screen and (max-width: 575px) {
+  #footerSocialMedia {
+    ul {
+      text-align: center;
+    }
+  }
+  #footerSection {
+    .footerLogo {
+      justify-content: center;
+
+      img {
+        float: none;
+        margin-bottom: 30px;
+      }
+    }
+
+    .rightsReserved {
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -1423,7 +1546,6 @@ nav {
     h1:first-of-type {
       color: #3f5cbf;
       font-size: 32px;
-      margin: 0;
     }
 
     h1,
@@ -1450,6 +1572,11 @@ nav {
       margin-top: -18px;
       transform: rotate(0deg);
       margin-left: 8px;
+    }
+
+    .typedHeight {
+      height: 81px;
+      margin-bottom: 30px;
     }
 
     p {
@@ -1523,9 +1650,45 @@ nav {
       transition: all 0.2s ease;
     }
 
-    // a:hover {
-    //   background-color: red;
-    // }
+    .mainIllustration img {
+      width: 90%;
+    }
+  }
+
+  #mySkills {
+    .container {
+      .col-sm-8 {
+        width: 100%;
+      }
+    }
+  }
+
+  #latestWork {
+    .container {
+      .col-sm-8 {
+        width: 100%;
+      }
+
+      .projectWrapper h3 {
+        font-size: 32px;
+      }
+    }
+  }
+
+  #mainSection {
+    .wrapper::before {
+      left: 0px;
+    }
+  }
+  #footerSocialMedia {
+    .wrapper::before {
+      left: 0px;
+    }
+  }
+  #footerSection {
+    .wrapper::before {
+      right: 0px;
+    }
   }
 }
 
@@ -1535,117 +1698,19 @@ nav {
     h1:first-of-type {
       margin-top: 100px;
     }
+
+    .mainIllustration img {
+      max-width: 560px;
+    }
+
+    a {
+      margin-bottom: 60px;
+    }
+    .yellowDots {
+      bottom: -100px;
+    }
   }
-  // #mainSection {
-  //   width: 100%;
-  //   overflow: hidden;
 
-  //   h1:first-of-type {
-  //     color: #3f5cbf;
-  //     font-size: 36px;
-  //   }
-
-  //   h1,
-  //   #typed {
-  //     font-family: "BoubaRound-Black", Poppins, sans-serif;
-  //     font-size: 70px;
-  //     color: #200c42;
-
-  //     span {
-  //       color: #f8b827;
-  //     }
-  //   }
-
-  //   #typed {
-  //     min-height: 12px;
-  //   }
-
-  //   .yellowLightning {
-  //     display: inline-block;
-  //     stroke: #f8b827;
-  //     stroke-width: 1.5px;
-  //     fill: none;
-  //     height: 42px;
-  //     margin-top: -18px;
-  //     transform: rotate(0deg);
-  //     margin-left: 8px;
-  //   }
-
-  //   p {
-  //     font-family: "Open Sans", sans-serif;
-  //     font-weight: 300;
-  //     font-size: 16px;
-  //     color: #200c42;
-  //     margin-bottom: 0;
-  //   }
-
-  //   a {
-  //     display: inline-block;
-  //     text-align: center;
-  //     margin-top: 30px;
-  //     font-family: "BoubaRound-Black", Poppins, sans-serif;
-  //     font-weight: 700;
-  //     font-size: 18px;
-  //     color: #200c42;
-  //     width: 100%;
-  //     max-width: 220px;
-  //     padding: 20px 0;
-  //     background-color: none;
-  //     text-decoration: none;
-  //     border-radius: 60px;
-  //     position: relative;
-  //     z-index: 0;
-  //     transition: all 0.5s ease;
-  //     transition: background-color 0.2s ease;
-
-  //     &::before {
-  //       content: "";
-  //       position: absolute;
-  //       background-color: #f8b827;
-  //       width: 64px;
-  //       height: 64px;
-  //       border-radius: 60px;
-  //       z-index: -1;
-  //       top: 0;
-  //       left: 0;
-  //       transition: all 0.5s ease;
-  //     }
-  //   }
-
-  //   .bolt {
-  //     opacity: 0;
-  //     margin-left: 15px;
-  //     transition: all 0.2s ease;
-  //   }
-
-  //   a:hover:before,
-  //   a:active:before,
-  //   a:focus:before {
-  //     color: #fff;
-  //     width: 220px;
-  //     box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
-  //     transition: all 0.2s ease;
-  //   }
-
-  //   a:hover {
-  //     color: #fff;
-  //     transition: all 0.2s ease;
-  //   }
-
-  //   a:hover {
-  //     color: #fff;
-  //     transition: all 0.2s ease;
-  //   }
-
-  //   a:hover .bolt {
-  //     opacity: 1;
-  //     transition: all 0.2s ease;
-  //   }
-
-  //   // a:hover {
-  //   //   background-color: red;
-  //   // }
-  // }
   .nav {
     display: none;
     ul {
@@ -1774,6 +1839,9 @@ nav {
       .skillBox {
         margin-bottom: 60px;
       }
+      .skillBox:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
   #parallaxMountain {
@@ -1829,35 +1897,42 @@ nav {
       }
     }
   }
+
+  #contactSection {
+    .container {
+      .col-lg-6:nth-of-type(2) {
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.9) 0%,
+          rgba(255, 255, 255, 0.8) 100%
+        );
+        margin: 60px auto 0 auto;
+        max-width: 90%;
+      }
+    }
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1199px) {
   #mainSection {
-    .wrapper::before {
-      left: 20px;
+    .yellowDots {
+      bottom: -100px;
     }
   }
-  #footerSocialMedia {
-    .wrapper::before {
-      left: 20px;
-    }
-  }
-  #footerSection {
-    .wrapper::before {
-      right: 20px;
-    }
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #mySkills {
     .skillBox:last-of-type {
       margin-top: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #mainSection {
+    .yellowDots {
+      bottom: 0;
     }
   }
 }
@@ -1878,4 +1953,8 @@ nav {
       right: 25px;
     }
   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
