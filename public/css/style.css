@@ -31,6 +31,8 @@
   clear: both; }
 
 body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   position: relative; }
   body .container {
