@@ -22,6 +22,9 @@
 @font-face {
   font-family: "BoubaRound-Black";
   src: url("webFonts/BoubaRoundBlack/font.woff2") format("woff2"), url("webFonts/BoubaRoundBlack/font.woff") format("woff"); }
+html {
+  scroll-behavior: smooth !important; }
+
 * {
   box-sizing: border-box; }
 
