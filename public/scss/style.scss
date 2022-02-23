@@ -828,7 +828,7 @@ nav {
       right: 0;
       z-index: 1;
       background: #fff;
-      border-radius: 20px;
+      // border-radius: 20px;
     }
 
     .projectPadding1::after,
@@ -1539,8 +1539,8 @@ nav {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 767px and down) */
+@media only screen and (max-width: 767px) {
   #mainSection {
     width: 100%;
     overflow: hidden;
@@ -1671,13 +1671,73 @@ nav {
         width: 100%;
       }
 
+      .projectPadding1::after,
+      .projectPadding1::before {
+        border-radius: 0 0 20px 20px;
+      }
+      .projectPadding2::after,
+      .projectPadding2::before {
+        border-radius: 0 0 20px 20px;
+      }
+      .projectPadding3::after,
+      .projectPadding3::before {
+        border-radius: 0 0 20px 20px;
+      }
+      .projectPadding4::after,
+      .projectPadding4::before {
+        border-radius: 0 0 20px 20px;
+      }
+      .projectPadding5::after,
+      .projectPadding5::before {
+        border-radius: 0 0 20px 20px;
+      }
+      .projectPadding6::after,
+      .projectPadding6::before {
+        border-radius: 0 0 20px 20px;
+      }
+
       .projectWrapper h3 {
         font-size: 32px;
+      }
+
+      .projectImg1::after,
+      .projectImg1::before {
+        border-radius: 20px 20px 0 0;
+      }
+      .projectImg2::after,
+      .projectImg2::before {
+        border-radius: 20px 20px 0 0;
+      }
+      .projectImg3::after,
+      .projectImg3::before {
+        border-radius: 20px 20px 0 0;
+      }
+      .projectImg4::after,
+      .projectImg4::before {
+        border-radius: 20px 20px 0 0;
+      }
+      .projectImg5::after,
+      .projectImg5::before {
+        border-radius: 20px 20px 0 0;
+      }
+      .projectImg6::after,
+      .projectImg6::before {
+        border-radius: 20px 20px 0 0;
       }
     }
 
     .offset-sm-2 {
       margin: 0;
+    }
+
+    .modal-body {
+      .container {
+        padding: 100px 20px !important;
+
+        .row {
+          padding: 0;
+        }
+      }
     }
   }
 

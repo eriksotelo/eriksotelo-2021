@@ -550,8 +550,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 1;
-    background: #fff;
-    border-radius: 20px; }
+    background: #fff; }
   #latestWork .container .projectPadding1::after,
   #latestWork .container .projectPadding1::before {
     border-radius: 0 20px 20px 0; }
@@ -1025,8 +1024,8 @@ nav {
     justify-content: center;
     text-align: center;
     margin-bottom: 40px; } }
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 767px and down) */
+@media only screen and (max-width: 767px) {
   #mainSection {
     width: 100%;
     overflow: hidden; }
@@ -1118,10 +1117,50 @@ nav {
 
   #latestWork .container .col-sm-8 {
     width: 100%; }
+  #latestWork .container .projectPadding1::after,
+  #latestWork .container .projectPadding1::before {
+    border-radius: 0 0 20px 20px; }
+  #latestWork .container .projectPadding2::after,
+  #latestWork .container .projectPadding2::before {
+    border-radius: 0 0 20px 20px; }
+  #latestWork .container .projectPadding3::after,
+  #latestWork .container .projectPadding3::before {
+    border-radius: 0 0 20px 20px; }
+  #latestWork .container .projectPadding4::after,
+  #latestWork .container .projectPadding4::before {
+    border-radius: 0 0 20px 20px; }
+  #latestWork .container .projectPadding5::after,
+  #latestWork .container .projectPadding5::before {
+    border-radius: 0 0 20px 20px; }
+  #latestWork .container .projectPadding6::after,
+  #latestWork .container .projectPadding6::before {
+    border-radius: 0 0 20px 20px; }
   #latestWork .container .projectWrapper h3 {
     font-size: 32px; }
+  #latestWork .container .projectImg1::after,
+  #latestWork .container .projectImg1::before {
+    border-radius: 20px 20px 0 0; }
+  #latestWork .container .projectImg2::after,
+  #latestWork .container .projectImg2::before {
+    border-radius: 20px 20px 0 0; }
+  #latestWork .container .projectImg3::after,
+  #latestWork .container .projectImg3::before {
+    border-radius: 20px 20px 0 0; }
+  #latestWork .container .projectImg4::after,
+  #latestWork .container .projectImg4::before {
+    border-radius: 20px 20px 0 0; }
+  #latestWork .container .projectImg5::after,
+  #latestWork .container .projectImg5::before {
+    border-radius: 20px 20px 0 0; }
+  #latestWork .container .projectImg6::after,
+  #latestWork .container .projectImg6::before {
+    border-radius: 20px 20px 0 0; }
   #latestWork .offset-sm-2 {
     margin: 0; }
+  #latestWork .modal-body .container {
+    padding: 100px 20px !important; }
+    #latestWork .modal-body .container .row {
+      padding: 0; }
 
   #mainSection .wrapper::before {
     left: 0px; }
