@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: unset !important;
+}
+
 .group:after {
   content: "";
   display: table;
@@ -37,8 +41,6 @@
 }
 
 body {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   // min-height: 3000px;
   // margin-top: 5000px;
   background-color: #fff;
