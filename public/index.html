@@ -1576,14 +1576,9 @@
       }
     </script>
     <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 300
+      });
       </script>
   </body>
 </html>
