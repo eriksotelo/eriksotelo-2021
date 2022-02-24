@@ -189,28 +189,48 @@ nav {
     right: 30px;
     margin-bottom: 0;
 
-    span:nth-of-type(1) {
-      float: left;
-      margin-right: 34px;
-      transition: all 0.2s ease;
+    // span:nth-of-type(1) {
+    //   float: left;
+    //   margin-right: 34px;
+    //   transition: all 0.2s ease;
+    // }
+
+    .navIcon {
+      position: absolute;
     }
 
-    span:nth-of-type(2) {
-      position: absolute;
+    .navIcon1 {
       top: 16px;
-      right: 0;
-      padding-right: 18px;
-      margin-left: 24px;
+      right: 19px;
+    }
+
+    .navIcon2 {
+      top: 19px;
+      right: 18px;
+    }
+
+    .navIcon3 {
+      top: 19px;
+      right: 21px;
+    }
+
+    .navIcon4 {
+      top: 18px;
+      right: 18px;
     }
 
     .hideInit {
       opacity: 0;
       transition: all 0.2s ease;
+      margin-right: 62px;
+      transition: all 0.2s ease;
+      text-align: right;
+      display: inline-block;
     }
 
     a {
       display: inline-block;
-      text-align: center;
+      text-align: right;
       font-family: "BoubaRound-Black", Poppins, sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -1385,6 +1405,11 @@ nav {
 
   .footerLogo {
     justify-content: flex-end;
+
+    img {
+      width: 100%;
+      max-width: 169px;
+    }
   }
 
   .rightsReserved {
@@ -1827,7 +1852,7 @@ nav {
       }
 
       .hideInit {
-        opacity: 0;
+        opacity: 1;
         transition: all 0.2s ease;
       }
 
@@ -1849,7 +1874,7 @@ nav {
       .paynesGrey {
         &::before {
           background-color: #200c42;
-          width: 240px;
+          width: 210px;
         }
       }
 
@@ -1862,29 +1887,53 @@ nav {
       .seaBreeze {
         &::before {
           background-color: #53d5e5;
-          width: 220px;
+          width: 190px;
         }
       }
 
       .pinneapleYellow {
         &::before {
           background-color: #f8b827;
-          width: 200px;
+          width: 170px;
         }
       }
 
       .sunsetVista {
         &::before {
           background-color: #d30c7b;
-          width: 180px;
+          width: 150px;
         }
       }
 
-      a:hover:before,
-      a:active:before,
-      a:focus:before {
+      a.paynesGrey:hover:before,
+      a.paynesGrey:active:before,
+      a.paynesGrey:focus:before {
         color: #fff;
-        width: 180px;
+        width: 190px;
+        transition: all 0.2s ease;
+      }
+
+      a.seaBreeze:hover:before,
+      a.seaBreeze:active:before,
+      a.seaBreeze:focus:before {
+        color: #fff;
+        width: 170px;
+        transition: all 0.2s ease;
+      }
+
+      a.pinneapleYellow:hover:before,
+      a.pinneapleYellow:active:before,
+      a.pinneapleYellow:focus:before {
+        color: #fff;
+        width: 190px;
+        transition: all 0.2s ease;
+      }
+
+      a.sunsetVista:hover:before,
+      a.sunsetVista:active:before,
+      a.sunsetVista:focus:before {
+        color: #fff;
+        width: 170px;
         transition: all 0.2s ease;
       }
 

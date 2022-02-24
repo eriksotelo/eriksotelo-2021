@@ -128,22 +128,30 @@ nav {
     list-style: none;
     right: 30px;
     margin-bottom: 0; }
-    nav ul span:nth-of-type(1) {
-      float: left;
-      margin-right: 34px;
-      transition: all 0.2s ease; }
-    nav ul span:nth-of-type(2) {
-      position: absolute;
+    nav ul .navIcon {
+      position: absolute; }
+    nav ul .navIcon1 {
       top: 16px;
-      right: 0;
-      padding-right: 18px;
-      margin-left: 24px; }
+      right: 19px; }
+    nav ul .navIcon2 {
+      top: 19px;
+      right: 18px; }
+    nav ul .navIcon3 {
+      top: 19px;
+      right: 21px; }
+    nav ul .navIcon4 {
+      top: 18px;
+      right: 18px; }
     nav ul .hideInit {
       opacity: 0;
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      margin-right: 62px;
+      transition: all 0.2s ease;
+      text-align: right;
+      display: inline-block; }
     nav ul a {
       display: inline-block;
-      text-align: center;
+      text-align: right;
       font-family: "BoubaRound-Black", Poppins, sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -938,6 +946,9 @@ nav {
     align-self: center; }
   #footerSection .footerLogo {
     justify-content: flex-end; }
+    #footerSection .footerLogo img {
+      width: 100%;
+      max-width: 169px; }
   #footerSection .rightsReserved {
     justify-content: flex-start; }
   #footerSection .wrapper {
@@ -1215,7 +1226,7 @@ nav {
         padding-right: 18px;
         margin-left: 24px; }
       nav ul .hideInit {
-        opacity: 0;
+        opacity: 1;
         transition: all 0.2s ease; }
       nav ul a::before {
         content: "";
@@ -1230,23 +1241,41 @@ nav {
         float: left; }
       nav ul .paynesGrey::before {
         background-color: #200c42;
-        width: 240px; }
+        width: 210px; }
       nav ul .oceanBlue::before {
         background-color: #3f5cbf; }
       nav ul .seaBreeze::before {
         background-color: #53d5e5;
-        width: 220px; }
+        width: 190px; }
       nav ul .pinneapleYellow::before {
         background-color: #f8b827;
-        width: 200px; }
+        width: 170px; }
       nav ul .sunsetVista::before {
         background-color: #d30c7b;
-        width: 180px; }
-      nav ul a:hover:before,
-      nav ul a:active:before,
-      nav ul a:focus:before {
+        width: 150px; }
+      nav ul a.paynesGrey:hover:before,
+      nav ul a.paynesGrey:active:before,
+      nav ul a.paynesGrey:focus:before {
         color: #fff;
-        width: 180px;
+        width: 190px;
+        transition: all 0.2s ease; }
+      nav ul a.seaBreeze:hover:before,
+      nav ul a.seaBreeze:active:before,
+      nav ul a.seaBreeze:focus:before {
+        color: #fff;
+        width: 170px;
+        transition: all 0.2s ease; }
+      nav ul a.pinneapleYellow:hover:before,
+      nav ul a.pinneapleYellow:active:before,
+      nav ul a.pinneapleYellow:focus:before {
+        color: #fff;
+        width: 190px;
+        transition: all 0.2s ease; }
+      nav ul a.sunsetVista:hover:before,
+      nav ul a.sunsetVista:active:before,
+      nav ul a.sunsetVista:focus:before {
+        color: #fff;
+        width: 170px;
         transition: all 0.2s ease; }
       nav ul a:hover {
         color: #fff;
