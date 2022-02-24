@@ -1219,12 +1219,6 @@ nav {
       position: absolute;
       list-style: none;
       right: 40px; }
-      nav ul span:nth-of-type(2) {
-        position: absolute;
-        top: 16px;
-        right: 0;
-        padding-right: 18px;
-        margin-left: 24px; }
       nav ul .hideInit {
         opacity: 1;
         transition: all 0.2s ease; }
@@ -1241,29 +1235,29 @@ nav {
         float: left; }
       nav ul .paynesGrey::before {
         background-color: #200c42;
-        width: 210px; }
+        width: 190px; }
       nav ul .oceanBlue::before {
         background-color: #3f5cbf; }
       nav ul .seaBreeze::before {
         background-color: #53d5e5;
-        width: 190px; }
+        width: 180px; }
       nav ul .pinneapleYellow::before {
         background-color: #f8b827;
         width: 170px; }
       nav ul .sunsetVista::before {
         background-color: #d30c7b;
-        width: 150px; }
+        width: 160px; }
       nav ul a.paynesGrey:hover:before,
       nav ul a.paynesGrey:active:before,
       nav ul a.paynesGrey:focus:before {
         color: #fff;
-        width: 190px;
+        width: 210px;
         transition: all 0.2s ease; }
       nav ul a.seaBreeze:hover:before,
       nav ul a.seaBreeze:active:before,
       nav ul a.seaBreeze:focus:before {
         color: #fff;
-        width: 170px;
+        width: 200px;
         transition: all 0.2s ease; }
       nav ul a.pinneapleYellow:hover:before,
       nav ul a.pinneapleYellow:active:before,
@@ -1275,7 +1269,7 @@ nav {
       nav ul a.sunsetVista:active:before,
       nav ul a.sunsetVista:focus:before {
         color: #fff;
-        width: 170px;
+        width: 180px;
         transition: all 0.2s ease; }
       nav ul a:hover {
         color: #fff;

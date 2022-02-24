@@ -1840,17 +1840,6 @@ nav {
       list-style: none;
       right: 40px;
 
-      span:nth-of-type(1) {
-      }
-
-      span:nth-of-type(2) {
-        position: absolute;
-        top: 16px;
-        right: 0;
-        padding-right: 18px;
-        margin-left: 24px;
-      }
-
       .hideInit {
         opacity: 1;
         transition: all 0.2s ease;
@@ -1874,7 +1863,7 @@ nav {
       .paynesGrey {
         &::before {
           background-color: #200c42;
-          width: 210px;
+          width: 190px;
         }
       }
 
@@ -1887,7 +1876,7 @@ nav {
       .seaBreeze {
         &::before {
           background-color: #53d5e5;
-          width: 190px;
+          width: 180px;
         }
       }
 
@@ -1901,7 +1890,7 @@ nav {
       .sunsetVista {
         &::before {
           background-color: #d30c7b;
-          width: 150px;
+          width: 160px;
         }
       }
 
@@ -1909,7 +1898,7 @@ nav {
       a.paynesGrey:active:before,
       a.paynesGrey:focus:before {
         color: #fff;
-        width: 190px;
+        width: 210px;
         transition: all 0.2s ease;
       }
 
@@ -1917,7 +1906,7 @@ nav {
       a.seaBreeze:active:before,
       a.seaBreeze:focus:before {
         color: #fff;
-        width: 170px;
+        width: 200px;
         transition: all 0.2s ease;
       }
 
@@ -1933,7 +1922,7 @@ nav {
       a.sunsetVista:active:before,
       a.sunsetVista:focus:before {
         color: #fff;
-        width: 170px;
+        width: 180px;
         transition: all 0.2s ease;
       }
 
