@@ -2066,6 +2066,9 @@ nav {
       input {
         margin-top: 35px;
       }
+      input.submit {
+        margin-top: 0;
+      }
       textarea#message {
         max-height: 160px;
       }

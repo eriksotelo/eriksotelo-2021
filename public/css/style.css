@@ -1361,6 +1361,8 @@ nav {
     max-width: 90%; }
   #contactSection .container input {
     margin-top: 35px; }
+  #contactSection .container input.submit {
+    margin-top: 0; }
   #contactSection .container textarea#message {
     max-height: 160px; } }
 @media only screen and (max-width: 620px) {
