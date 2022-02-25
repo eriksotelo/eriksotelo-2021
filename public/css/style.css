@@ -1519,116 +1519,36 @@ nav {
   .burger-container {
     display: inline-block; } }
 @media (hover: hover) {
-  #mainSection a {
-    color: #fff; }
-  #mainSection a::before {
-    width: 220px; }
-  #mainSection .bolt {
-    opacity: 1;
-    display: none; }
-    #mainSection .bolt svg {
-      stroke-width: 1.5px;
-      fill: #fff; }
-  #mainSection .yellowDots {
-    bottom: -120px; }
+  nav ul a:hover:before,
+  nav ul a:active:before,
+  nav ul a:focus:before {
+    color: #fff;
+    width: 180px;
+    transition: all 0.2s ease; }
 
-  .nav {
-    display: none; }
-    .nav ul {
-      bottom: 165px;
-      top: initial; }
+  #mainSection a:hover:before,
+  #mainSection a:active:before,
+  #mainSection a:focus:before {
+    color: #fff;
+    width: 220px;
+    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+    transition: all 0.2s ease; }
 
-  nav {
-    height: 90px;
-    position: fixed;
-    width: 100%;
-    max-width: 220px;
-    z-index: 10000;
-    top: initial;
-    bottom: 0;
-    right: 0; }
-    nav .container {
-      position: relative; }
-      nav .container .col-sm-6:nth-of-type(2) {
-        position: relative; }
-      nav .container img {
-        margin-top: 30px;
-        height: 30px; }
-    nav ul {
-      position: absolute;
-      list-style: none;
-      right: 40px; }
-      nav ul .hideInit {
-        opacity: 1;
-        transition: all 0.2s ease; }
-      nav ul a::before {
-        content: "";
-        position: absolute;
-        width: 180px;
-        height: 64px;
-        border-radius: 60px;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        transition: all 0.5s ease;
-        float: left; }
-      nav ul .paynesGrey::before {
-        background-color: #200c42;
-        width: 190px; }
-      nav ul .oceanBlue::before {
-        background-color: #3f5cbf; }
-      nav ul .seaBreeze::before {
-        background-color: #53d5e5;
-        width: 180px; }
-      nav ul .pinneapleYellow::before {
-        background-color: #f8b827;
-        width: 170px; }
-      nav ul .sunsetVista::before {
-        background-color: #d30c7b;
-        width: 160px; }
-      nav ul a.paynesGrey:hover:before,
-      nav ul a.paynesGrey:active:before,
-      nav ul a.paynesGrey:focus:before {
-        color: #fff;
-        width: 210px;
-        transition: all 0.2s ease; }
-      nav ul a.seaBreeze:hover:before,
-      nav ul a.seaBreeze:active:before,
-      nav ul a.seaBreeze:focus:before {
-        color: #fff;
-        width: 200px;
-        transition: all 0.2s ease; }
-      nav ul a.pinneapleYellow:hover:before,
-      nav ul a.pinneapleYellow:active:before,
-      nav ul a.pinneapleYellow:focus:before {
-        color: #fff;
-        width: 190px;
-        transition: all 0.2s ease; }
-      nav ul a.sunsetVista:hover:before,
-      nav ul a.sunsetVista:active:before,
-      nav ul a.sunsetVista:focus:before {
-        color: #fff;
-        width: 180px;
-        transition: all 0.2s ease; }
-      nav ul a:hover {
-        color: #fff;
-        transition: all 0.2s ease; }
-      nav ul a:hover .hideInit {
-        opacity: 1;
-        transition: all 0.2s ease; }
+  #latestWork .btn-yellow:hover:before,
+  #latestWork .btn-yellow:active:before,
+  #latestWork .btn-yellow:focus:before {
+    color: #fff;
+    width: 200px;
+    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+    transition: all 0.2s ease; }
 
-  .burger-container {
-    display: inline-block; }
-
-  #latestWork .btn-yellow {
-    color: #fff; }
-  #latestWork .btn-yellow::before {
-    width: 200px; }
-
-  #contactSection input.submit {
-    color: #fff; }
-  #contactSection a::before {
-    width: 220px; } }
+  #contactSection a:hover:before,
+  #contactSection a:active:before,
+  #contactSection a:focus:before {
+    color: #fff;
+    width: 220px;
+    box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+    transition: all 0.2s ease; } }
 @media only screen and (max-width: 1024px) {
   #mainSection a {
     color: #fff; }
