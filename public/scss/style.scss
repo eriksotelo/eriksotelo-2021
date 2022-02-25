@@ -2516,5 +2516,6 @@ nav {
 @media (hover: hover) {
   nav ul a:hover:before {
     width: 180px;
+    transition: all 0.2s ease;
   }
 }
