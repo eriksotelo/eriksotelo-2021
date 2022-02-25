@@ -291,13 +291,13 @@ nav {
         background-color: #d30c7b;
       }
     }
-
-    a:active:before,
-    a:focus:before {
-      color: #fff;
-      width: 180px;
-      transition: all 0.2s ease;
-    }
+    // a:hover:before,
+    // a:active:before,
+    // a:focus:before {
+    //   color: #fff;
+    //   width: 180px;
+    //   transition: all 0.2s ease;
+    // }
 
     a:hover {
       color: #fff;
@@ -2514,8 +2514,15 @@ nav {
 }
 
 @media (hover: hover) {
-  nav ul a:hover:before {
-    width: 180px;
-    transition: all 0.2s ease;
+  nav {
+    ul {
+      a:hover:before,
+      a:active:before,
+      a:focus:before {
+        color: #fff;
+        width: 180px;
+        transition: all 0.2s ease;
+      }
+    }
   }
 }
