@@ -2334,6 +2334,186 @@ nav {
   }
 }
 
+@media (hover: hover) {
+  #mainSection {
+    a {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
+    .bolt {
+      opacity: 1;
+      display: none;
+
+      svg {
+        stroke-width: 1.5px;
+        fill: #fff;
+      }
+    }
+
+    .yellowDots {
+      bottom: -120px;
+    }
+  }
+  .nav {
+    display: none;
+    ul {
+      bottom: 165px;
+      top: initial;
+    }
+  }
+
+  nav {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    max-width: 220px;
+    z-index: 10000;
+    top: initial;
+    bottom: 0;
+    right: 0;
+
+    .container {
+      position: relative;
+
+      .col-sm-6:nth-of-type(2) {
+        position: relative;
+      }
+
+      img {
+        margin-top: 30px;
+        height: 30px;
+      }
+    }
+
+    ul {
+      position: absolute;
+      list-style: none;
+      right: 40px;
+
+      .hideInit {
+        opacity: 1;
+        transition: all 0.2s ease;
+      }
+
+      a {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 180px;
+          height: 64px;
+          border-radius: 60px;
+          z-index: -1;
+          top: 0;
+          right: 0;
+          transition: all 0.5s ease;
+          float: left;
+        }
+      }
+
+      .paynesGrey {
+        &::before {
+          background-color: #200c42;
+          width: 190px;
+        }
+      }
+
+      .oceanBlue {
+        &::before {
+          background-color: #3f5cbf;
+        }
+      }
+
+      .seaBreeze {
+        &::before {
+          background-color: #53d5e5;
+          width: 180px;
+        }
+      }
+
+      .pinneapleYellow {
+        &::before {
+          background-color: #f8b827;
+          width: 170px;
+        }
+      }
+
+      .sunsetVista {
+        &::before {
+          background-color: #d30c7b;
+          width: 160px;
+        }
+      }
+
+      a.paynesGrey:hover:before,
+      a.paynesGrey:active:before,
+      a.paynesGrey:focus:before {
+        color: #fff;
+        width: 210px;
+        transition: all 0.2s ease;
+      }
+
+      a.seaBreeze:hover:before,
+      a.seaBreeze:active:before,
+      a.seaBreeze:focus:before {
+        color: #fff;
+        width: 200px;
+        transition: all 0.2s ease;
+      }
+
+      a.pinneapleYellow:hover:before,
+      a.pinneapleYellow:active:before,
+      a.pinneapleYellow:focus:before {
+        color: #fff;
+        width: 190px;
+        transition: all 0.2s ease;
+      }
+
+      a.sunsetVista:hover:before,
+      a.sunsetVista:active:before,
+      a.sunsetVista:focus:before {
+        color: #fff;
+        width: 180px;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        color: #fff;
+        transition: all 0.2s ease;
+      }
+
+      a:hover .hideInit {
+        opacity: 1;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  .burger-container {
+    display: inline-block;
+  }
+
+  #latestWork {
+    .btn-yellow {
+      color: #fff;
+    }
+
+    .btn-yellow::before {
+      width: 200px;
+    }
+  }
+
+  #contactSection {
+    input.submit {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #mainSection {
     a {
