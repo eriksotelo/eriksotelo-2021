@@ -2515,9 +2515,7 @@ nav {
 }
 
 @media (hover: hover) {
-  nav ul a:hover:before,
-  nav ul a:active:before,
-  nav ul a:focus:before {
+  nav ul a:hover:before {
     color: #fff;
     width: 180px;
     transition: all 0.2s ease;
