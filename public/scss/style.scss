@@ -2334,40 +2334,6 @@ nav {
   }
 }
 
-@media (hover: hover) {
-  nav ul a:hover:before,
-  nav ul a:active:before,
-  nav ul a:focus:before {
-    color: #fff;
-    width: 180px;
-    transition: all 0.2s ease;
-  }
-  #mainSection a:hover:before,
-  #mainSection a:active:before,
-  #mainSection a:focus:before {
-    color: #fff;
-    width: 220px;
-    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
-    transition: all 0.2s ease;
-  }
-  #latestWork .btn-yellow:hover:before,
-  #latestWork .btn-yellow:active:before,
-  #latestWork .btn-yellow:focus:before {
-    color: #fff;
-    width: 200px;
-    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
-    transition: all 0.2s ease;
-  }
-  #contactSection a:hover:before,
-  #contactSection a:active:before,
-  #contactSection a:focus:before {
-    color: #fff;
-    width: 220px;
-    box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
-    transition: all 0.2s ease;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   #mainSection {
     a {
@@ -2545,5 +2511,39 @@ nav {
     a::before {
       width: 220px;
     }
+  }
+}
+
+@media (hover: hover) {
+  nav ul a:hover:before,
+  nav ul a:active:before,
+  nav ul a:focus:before {
+    color: #fff;
+    width: 180px;
+    transition: all 0.2s ease;
+  }
+  #mainSection a:hover:before,
+  #mainSection a:active:before,
+  #mainSection a:focus:before {
+    color: #fff;
+    width: 220px;
+    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+    transition: all 0.2s ease;
+  }
+  #latestWork .btn-yellow:hover:before,
+  #latestWork .btn-yellow:active:before,
+  #latestWork .btn-yellow:focus:before {
+    color: #fff;
+    width: 200px;
+    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+    transition: all 0.2s ease;
+  }
+  #contactSection a:hover:before,
+  #contactSection a:active:before,
+  #contactSection a:focus:before {
+    color: #fff;
+    width: 220px;
+    box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+    transition: all 0.2s ease;
   }
 }
