@@ -812,7 +812,7 @@ nav {
     .projectPadding4,
     .projectPadding5,
     .projectPadding6 {
-      padding: 60px;
+      padding: 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1016,11 +1016,38 @@ nav {
       transition: all 0.5s ease;
     }
 
+    .btn-contact {
+      background-color: #d30c7b;
+      color: #fff;
+      border: none;
+      border-radius: 60px;
+      max-width: 140px;
+      padding: 14px 0;
+      width: 100%;
+      font-family: "BoubaRound-Black", Poppins, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      transition: all 0.5s ease;
+      margin-bottom: 0;
+    }
+
+    .btn-contact:hover {
+      box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+      transition: all 0.5s ease;
+    }
+
     .modal-content {
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
       overflow-y: scroll;
       z-index: 1;
+
+      // .col-sm-8 {
+      //   text-align: center;
+      //   p {
+      //     text-align: left;
+      //   }
+      // }
 
       .col-sm-12 {
         text-align: center;
@@ -1046,7 +1073,11 @@ nav {
         text-align: center;
         font-family: "BoubaRound-Black", "Poppins", sans-serif;
         font-size: 24px;
-        color: #3f5cbf;
+        color: #200c42;
+
+        span {
+          color: #f8b827;
+        }
       }
     }
 
@@ -1055,7 +1086,7 @@ nav {
       overflow-y: initial;
       padding: 0;
       .container {
-        padding: 100px 0;
+        padding: 60px 0;
 
         p {
           font-family: "Open Sans", sans-serif;
@@ -1063,6 +1094,7 @@ nav {
           font-size: 16px;
           color: #200c42;
           margin: 60px 0 40px 0;
+          text-align: center;
         }
       }
 
@@ -1079,7 +1111,15 @@ nav {
         font-weight: 300;
         font-size: 16px;
         color: #200c42;
-        margin: 10px 0 60px 0;
+        margin: 10px 0 15px 0;
+      }
+
+      .modal-outro p:nth-of-type(3) {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #200c42;
+        margin: 0 0 30px 0;
       }
     }
 
@@ -1506,6 +1546,12 @@ nav {
     li {
       display: inline;
       margin-right: 40px;
+      opacity: 0.75;
+      transition: all 0.2s ease;
+    }
+    li:hover {
+      opacity: 0.5;
+      transition: all 0.2s ease;
     }
 
     li:last-of-type {
@@ -1680,7 +1726,7 @@ nav {
     }
 
     .mainIllustration img {
-      width: 90%;
+      width: 80%;
     }
   }
 
@@ -2017,6 +2063,68 @@ nav {
         margin: 60px auto 0 auto;
         max-width: 90%;
       }
+      input {
+        margin-top: 35px;
+      }
+      textarea#message {
+        max-height: 160px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #parallaxMountain {
+    .container-fluid {
+      min-height: 300px;
+      overflow: hidden;
+      position: relative;
+      background-image: linear-gradient(
+        to top,
+        rgba(248, 184, 39, 0.3),
+        rgba(72, 213, 229, 0.3)
+      );
+      // background-image: url("/img/mountain-bg.svg");
+      background-attachment: scroll;
+      z-index: -1;
+
+      .mountain {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        max-width: 380px;
+        margin-left: -190px;
+        width: 100%;
+        z-index: 2;
+      }
+      .sunMountain {
+        max-width: 180px;
+        position: absolute;
+        left: 51%;
+        top: -10%;
+        z-index: 1;
+        margin: 0 auto;
+      }
+
+      .topBox {
+        max-width: 420px;
+        width: 100%;
+        margin-left: -210px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        z-index: 0;
+      }
+
+      .bottomBox {
+        max-width: 420px;
+        width: 100%;
+        margin-left: -210px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        z-index: 3;
+      }
     }
   }
 }
@@ -2070,6 +2178,27 @@ nav {
 /* iPad Pro 12.9) */
 
 @media only screen and (max-width: 1024px) {
+  #mainSection {
+    a {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
+    .bolt {
+      opacity: 1;
+      display: none;
+
+      svg {
+        stroke-width: 1.5px;
+        fill: #fff;
+      }
+    }
+
+    .yellowDots {
+      bottom: -120px;
+    }
+  }
   .nav {
     display: none;
     ul {
@@ -2206,5 +2335,24 @@ nav {
 
   .burger-container {
     display: inline-block;
+  }
+
+  #latestWork {
+    .btn-yellow {
+      color: #fff;
+    }
+
+    .btn-yellow::before {
+      width: 200px;
+    }
+  }
+
+  #contactSection {
+    input.submit {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
   }
 }

@@ -526,7 +526,7 @@ nav {
   #latestWork .container .projectPadding4,
   #latestWork .container .projectPadding5,
   #latestWork .container .projectPadding6 {
-    padding: 60px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -680,6 +680,22 @@ nav {
   #latestWork .modal .btn-secondary:hover {
     box-shadow: 0px 7px 30px rgba(63, 92, 191, 0.7);
     transition: all 0.5s ease; }
+  #latestWork .modal .btn-contact {
+    background-color: #d30c7b;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    max-width: 140px;
+    padding: 14px 0;
+    width: 100%;
+    font-family: "BoubaRound-Black", Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    margin-bottom: 0; }
+  #latestWork .modal .btn-contact:hover {
+    box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+    transition: all 0.5s ease; }
   #latestWork .modal .modal-content {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
@@ -700,19 +716,22 @@ nav {
       text-align: center;
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
       font-size: 24px;
-      color: #3f5cbf; }
+      color: #200c42; }
+      #latestWork .modal .modal-header .modal-title span {
+        color: #f8b827; }
   #latestWork .modal .modal-body {
     background-color: #fff;
     overflow-y: initial;
     padding: 0; }
     #latestWork .modal .modal-body .container {
-      padding: 100px 0; }
+      padding: 60px 0; }
       #latestWork .modal .modal-body .container p {
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         font-size: 16px;
         color: #200c42;
-        margin: 60px 0 40px 0; }
+        margin: 60px 0 40px 0;
+        text-align: center; }
     #latestWork .modal .modal-body .modal-outro p:first-of-type {
       text-align: center;
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
@@ -724,7 +743,13 @@ nav {
       font-weight: 300;
       font-size: 16px;
       color: #200c42;
-      margin: 10px 0 60px 0; }
+      margin: 10px 0 15px 0; }
+    #latestWork .modal .modal-body .modal-outro p:nth-of-type(3) {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #200c42;
+      margin: 0 0 30px 0; }
   #latestWork .modal .modal-footer {
     display: none;
     background-color: #fff; }
@@ -1004,7 +1029,12 @@ nav {
     margin: 40px 0; }
     #footerSocialMedia ul li {
       display: inline;
-      margin-right: 40px; }
+      margin-right: 40px;
+      opacity: 0.75;
+      transition: all 0.2s ease; }
+    #footerSocialMedia ul li:hover {
+      opacity: 0.5;
+      transition: all 0.2s ease; }
     #footerSocialMedia ul li:last-of-type {
       margin-right: 0px; }
 
@@ -1122,7 +1152,7 @@ nav {
       opacity: 1;
       transition: all 0.2s ease; }
     #mainSection .mainIllustration img {
-      width: 90%; }
+      width: 80%; }
 
   #mySkills .container .col-sm-8 {
     width: 100%; }
@@ -1328,7 +1358,50 @@ nav {
   #contactSection .container .col-lg-6:nth-of-type(2) {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
     margin: 60px auto 0 auto;
-    max-width: 90%; } }
+    max-width: 90%; }
+  #contactSection .container input {
+    margin-top: 35px; }
+  #contactSection .container textarea#message {
+    max-height: 160px; } }
+@media only screen and (max-width: 620px) {
+  #parallaxMountain .container-fluid {
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(248, 184, 39, 0.3), rgba(72, 213, 229, 0.3));
+    background-attachment: scroll;
+    z-index: -1; }
+    #parallaxMountain .container-fluid .mountain {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      max-width: 380px;
+      margin-left: -190px;
+      width: 100%;
+      z-index: 2; }
+    #parallaxMountain .container-fluid .sunMountain {
+      max-width: 180px;
+      position: absolute;
+      left: 51%;
+      top: -10%;
+      z-index: 1;
+      margin: 0 auto; }
+    #parallaxMountain .container-fluid .topBox {
+      max-width: 420px;
+      width: 100%;
+      margin-left: -210px;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      z-index: 0; }
+    #parallaxMountain .container-fluid .bottomBox {
+      max-width: 420px;
+      width: 100%;
+      margin-left: -210px;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      z-index: 3; } }
 @media only screen and (max-width: 1199px) {
   #mainSection .yellowDots {
     bottom: -100px; } }
@@ -1350,6 +1423,19 @@ nav {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* iPad Pro 12.9) */
 @media only screen and (max-width: 1024px) {
+  #mainSection a {
+    color: #fff; }
+  #mainSection a::before {
+    width: 220px; }
+  #mainSection .bolt {
+    opacity: 1;
+    display: none; }
+    #mainSection .bolt svg {
+      stroke-width: 1.5px;
+      fill: #fff; }
+  #mainSection .yellowDots {
+    bottom: -120px; }
+
   .nav {
     display: none; }
     .nav ul {
@@ -1436,6 +1522,16 @@ nav {
         transition: all 0.2s ease; }
 
   .burger-container {
-    display: inline-block; } }
+    display: inline-block; }
+
+  #latestWork .btn-yellow {
+    color: #fff; }
+  #latestWork .btn-yellow::before {
+    width: 200px; }
+
+  #contactSection input.submit {
+    color: #fff; }
+  #contactSection a::before {
+    width: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
