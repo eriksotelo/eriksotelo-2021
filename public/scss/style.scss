@@ -494,8 +494,8 @@ nav {
     //   flex-direction: row;
     // }
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     h2 {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
@@ -765,8 +765,8 @@ nav {
 
 #latestWork {
   .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .projectWrapper {
       border-radius: 20px;
@@ -1216,7 +1216,7 @@ nav {
 }
 
 #contactSection {
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
 
   h2 {
@@ -1835,7 +1835,7 @@ nav {
 @media only screen and (max-width: 991px) {
   #mainSection {
     h1:first-of-type {
-      margin-top: 60px;
+      margin-top: 80px;
     }
 
     .mainIllustration img {
@@ -1991,6 +1991,9 @@ nav {
 
   #mySkills {
     .container {
+      h2 {
+        font-size: 52px;
+      }
       .skillBox {
         margin-bottom: 60px;
       }
@@ -2053,8 +2056,19 @@ nav {
     }
   }
 
+  #latestWork {
+    .container {
+      h2 {
+        font-size: 52px;
+      }
+    }
+  }
+
   #contactSection {
     .container {
+      h2 {
+        font-size: 52px;
+      }
       .col-lg-6:nth-of-type(2) {
         background: linear-gradient(
           0deg,

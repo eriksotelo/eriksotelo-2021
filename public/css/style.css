@@ -319,8 +319,8 @@ nav {
     transition: all 0.2s ease; }
 
 #mySkills .container {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
   #mySkills .container h2 {
     font-family: "BoubaRound-Black", "Poppins", sans-serif;
     font-size: 60px;
@@ -492,8 +492,8 @@ nav {
     z-index: 3; }
 
 #latestWork .container {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
   #latestWork .container .projectWrapper {
     border-radius: 20px;
     margin-bottom: 60px;
@@ -820,7 +820,7 @@ nav {
   transition: all 0.2s ease; }
 
 #contactSection {
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative; }
   #contactSection h2 {
     font-family: "BoubaRound-Black", "Poppins", sans-serif;
@@ -1213,7 +1213,7 @@ nav {
 /* Medium devices (landscape tablets, 991px and down) */
 @media only screen and (max-width: 991px) {
   #mainSection h1:first-of-type {
-    margin-top: 60px; }
+    margin-top: 80px; }
   #mainSection .mainIllustration img {
     max-width: 560px;
     width: 75%; }
@@ -1310,6 +1310,8 @@ nav {
   .burger-container {
     display: inline-block; }
 
+  #mySkills .container h2 {
+    font-size: 52px; }
   #mySkills .container .skillBox {
     margin-bottom: 60px; }
   #mySkills .container .skillBox:last-of-type {
@@ -1354,6 +1356,11 @@ nav {
       top: 40%;
       z-index: 3; }
 
+  #latestWork .container h2 {
+    font-size: 52px; }
+
+  #contactSection .container h2 {
+    font-size: 52px; }
   #contactSection .container .col-lg-6:nth-of-type(2) {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
     margin: 60px auto 0 auto;
