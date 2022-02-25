@@ -1151,8 +1151,6 @@ nav {
     #mainSection a:hover .bolt {
       opacity: 1;
       transition: all 0.2s ease; }
-    #mainSection .mainIllustration img {
-      width: 80%; }
 
   #mySkills .container .col-sm-8 {
     width: 100%; }
@@ -1215,9 +1213,10 @@ nav {
 /* Medium devices (landscape tablets, 991px and down) */
 @media only screen and (max-width: 991px) {
   #mainSection h1:first-of-type {
-    margin-top: 100px; }
+    margin-top: 60px; }
   #mainSection .mainIllustration img {
-    max-width: 560px; }
+    max-width: 560px;
+    width: 75%; }
   #mainSection a {
     margin-bottom: 60px; }
   #mainSection .yellowDots {

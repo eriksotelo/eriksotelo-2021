@@ -1726,7 +1726,7 @@ nav {
     }
 
     .mainIllustration img {
-      width: 80%;
+      // width: 80%;
     }
   }
 
@@ -1835,11 +1835,12 @@ nav {
 @media only screen and (max-width: 991px) {
   #mainSection {
     h1:first-of-type {
-      margin-top: 100px;
+      margin-top: 60px;
     }
 
     .mainIllustration img {
       max-width: 560px;
+      width: 75%;
     }
 
     a {
