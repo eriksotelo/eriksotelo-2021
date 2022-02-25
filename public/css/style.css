@@ -1630,14 +1630,8 @@ nav {
   #contactSection a::before {
     width: 220px; } }
 @media (hover: hover) {
-  nav ul a:hover {
-    color: #fff;
-    transition: all 0.2s ease; }
-
   nav ul a:hover:before {
-    color: #fff;
-    width: 180px;
-    transition: all 0.2s ease; }
+    width: 180px; }
 
   #mainSection a:hover:before,
   #mainSection a:active:before,
