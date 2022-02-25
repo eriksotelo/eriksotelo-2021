@@ -72,7 +72,7 @@ burgerBtn.addEventListener("click", function (e) {
 
 nav.addEventListener("click", function () {
   // this.classList.toggle("display");
-  if (viewportWidth < 992) {
+  if (viewportWidth < 1025) {
     burgerBtn.classList.toggle("open");
     this.classList.add("animate__rollOut");
     this.classList.remove("animate__rollIn");
@@ -90,7 +90,7 @@ window.addEventListener(
   "resize",
   function () {
     viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewportWidth > 992) {
+    if (viewportWidth > 1025) {
       console.log("Wide viewport");
       nav.classList.remove("display", "animate__rollOut", "animate__rollIn");
       burgerBtn.classList.remove("open");

@@ -1349,7 +1349,7 @@ nav {
     right: 25px; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* iPad Pro 12.9) */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (max-width: 1024px) {
   .nav {
     display: none; }
     .nav ul {
