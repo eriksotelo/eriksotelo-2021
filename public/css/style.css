@@ -189,6 +189,12 @@ nav {
       background-color: #f8b827; }
     nav ul .sunsetVista::before {
       background-color: #d30c7b; }
+    nav ul a:hover:before,
+    nav ul a:active:before,
+    nav ul a:focus:before {
+      color: #fff;
+      width: 180px;
+      transition: all 0.2s ease; }
     nav ul a:hover {
       color: #fff;
       transition: all 0.2s ease; }
@@ -645,6 +651,11 @@ nav {
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat; }
+#latestWork .projectImg6:after {
+  background: url("../img/ebook-preview.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat; }
 #latestWork .modal {
   padding-top: 40px;
   z-index: 10000; }
@@ -709,7 +720,7 @@ nav {
     #latestWork .modal .modal-header .modal-title {
       text-align: center;
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
-      font-size: 24px;
+      font-size: 28px;
       color: #200c42; }
       #latestWork .modal .modal-header .modal-title span {
         color: #f8b827; }
@@ -1623,12 +1634,5 @@ nav {
     color: #fff; }
   #contactSection a::before {
     width: 220px; } }
-@media (hover: hover) {
-  nav ul a:hover:before,
-  nav ul a:active:before,
-  nav ul a:focus:before {
-    color: #fff;
-    width: 180px;
-    transition: all 0.2s ease; } }
 
 /*# sourceMappingURL=style.css.map */

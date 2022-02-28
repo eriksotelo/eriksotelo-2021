@@ -291,13 +291,13 @@ nav {
         background-color: #d30c7b;
       }
     }
-    // a:hover:before,
-    // a:active:before,
-    // a:focus:before {
-    //   color: #fff;
-    //   width: 180px;
-    //   transition: all 0.2s ease;
-    // }
+    a:hover:before,
+    a:active:before,
+    a:focus:before {
+      color: #fff;
+      width: 180px;
+      transition: all 0.2s ease;
+    }
 
     a:hover {
       color: #fff;
@@ -977,6 +977,13 @@ nav {
     background-repeat: no-repeat;
   }
 
+  .projectImg6:after {
+    background: url("../img/ebook-preview.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+
   .modal {
     padding-top: 40px;
     z-index: 10000;
@@ -1071,7 +1078,7 @@ nav {
       .modal-title {
         text-align: center;
         font-family: "BoubaRound-Black", "Poppins", sans-serif;
-        font-size: 24px;
+        font-size: 28px;
         color: #200c42;
 
         span {
@@ -2509,20 +2516,6 @@ nav {
     }
     a::before {
       width: 220px;
-    }
-  }
-}
-
-@media (hover: hover) {
-  nav {
-    ul {
-      a:hover:before,
-      a:active:before,
-      a:focus:before {
-        color: #fff;
-        width: 180px;
-        transition: all 0.2s ease;
-      }
     }
   }
 }
