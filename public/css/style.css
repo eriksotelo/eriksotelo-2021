@@ -211,7 +211,7 @@ nav {
     height: 175px;
     bottom: -87.5px;
     right: -50px;
-    opacity: 0.8; }
+    opacity: 1; }
   #mainSection h1:first-of-type {
     color: #3f5cbf;
     font-size: 42px;
@@ -336,7 +336,7 @@ nav {
       height: 175px;
       top: -87.5px;
       right: -50px;
-      opacity: 0.8; }
+      opacity: 0.6; }
     #mySkills .container h2 {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
       font-size: 60px;
@@ -1396,7 +1396,46 @@ nav {
     margin-top: 0; }
   #contactSection .container textarea#message {
     max-height: 160px; } }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 428px) {
+  #parallaxMountain .container-fluid {
+    min-height: 240px;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(248, 184, 39, 0.3), rgba(72, 213, 229, 0.3));
+    background-attachment: scroll;
+    z-index: -1; }
+    #parallaxMountain .container-fluid .mountain {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      max-width: 300px;
+      margin-left: -150px;
+      width: 100%;
+      z-index: 2; }
+    #parallaxMountain .container-fluid .sunMountain {
+      max-width: 140px;
+      position: absolute;
+      left: 51%;
+      top: -10%;
+      z-index: 1;
+      margin: 0 auto; }
+    #parallaxMountain .container-fluid .topBox {
+      max-width: 320px;
+      width: 100%;
+      margin-left: -160px;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      z-index: 0; }
+    #parallaxMountain .container-fluid .bottomBox {
+      max-width: 320px;
+      width: 100%;
+      margin-left: -160px;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      z-index: 3; } }
+@media only screen and (min-width: 429px) and (max-width: 620px) {
   #parallaxMountain .container-fluid {
     min-height: 300px;
     overflow: hidden;
