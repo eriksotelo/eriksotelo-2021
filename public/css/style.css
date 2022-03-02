@@ -1404,7 +1404,9 @@ nav {
   #contactSection .container input.submit {
     margin-top: 0; }
   #contactSection .container textarea#message {
-    max-height: 160px; } }
+    max-height: 160px; }
+  #contactSection .contactIllustration {
+    top: 334px; } }
 @media only screen and (max-width: 428px) {
   #parallaxMountain .container-fluid {
     min-height: 240px;
@@ -1486,6 +1488,15 @@ nav {
 @media only screen and (max-width: 1199px) {
   #mainSection .yellowDots {
     bottom: -100px; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #contactSection .contactIllustration {
+    top: 309px; } }
+@media only screen and (max-width: 768px) {
+  #contactSection .contactIllustration {
+    top: 360px; } }
+@media only screen and (max-width: 437px) {
+  #contactSection .contactIllustration {
+    top: 385px; } }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #mySkills .skillBox:last-of-type {
     margin-top: 60px; } }

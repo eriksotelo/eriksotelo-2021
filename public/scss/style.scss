@@ -2133,6 +2133,9 @@ nav {
         max-height: 160px;
       }
     }
+    .contactIllustration {
+      top: 334px;
+    }
   }
 }
 
@@ -2252,6 +2255,30 @@ nav {
   #mainSection {
     .yellowDots {
       bottom: -100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #contactSection {
+    .contactIllustration {
+      top: 309px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contactSection {
+    .contactIllustration {
+      top: 360px;
+    }
+  }
+}
+
+@media only screen and (max-width: 437px) {
+  #contactSection {
+    .contactIllustration {
+      top: 385px;
     }
   }
 }
