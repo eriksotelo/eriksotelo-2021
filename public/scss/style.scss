@@ -407,7 +407,7 @@ nav {
   p {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: #200c42;
     margin-bottom: 0;
   }
@@ -491,20 +491,6 @@ nav {
   overflow: hidden;
 
   .container {
-    // .row {
-    //   --bs-gutter-x: 1.5rem;
-    //   --bs-gutter-y: 0;
-    //   display: flex;
-    //   flex-wrap: nowrap;
-    //   margin-top: calc(var(--bs-gutter-y) * -1);
-    //   margin-right: calc(var(--bs-gutter-x) / -2);
-    //   margin-left: calc(var(--bs-gutter-x) / -2);
-    //   justify-content: space-between;
-    //   align-items: center;
-    //   align-content: center;
-    //   flex-direction: row;
-    // }
-
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -541,7 +527,7 @@ nav {
     p {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 17px;
       color: #200c42;
       margin-bottom: 60px;
       // -webkit-touch-callout: none;
@@ -572,6 +558,7 @@ nav {
       p {
         font-weight: 700;
         margin-bottom: 0px;
+        font-size: 16px;
       }
 
       ul {
@@ -784,6 +771,10 @@ nav {
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    p {
+      font-size: 17px;
+    }
 
     a {
       text-decoration: none;
@@ -1133,10 +1124,18 @@ nav {
         p {
           font-family: "Open Sans", sans-serif;
           font-weight: 300;
-          font-size: 16px;
+          font-size: 17px;
           color: #200c42;
           margin: 60px 0 40px 0;
           text-align: center;
+        }
+
+        .col-sm-8 p:first-of-type {
+          margin: 60px 0 30px 0;
+        }
+
+        .col-sm-8 p:nth-of-type(2) {
+          margin: 0 0 40px 0;
         }
       }
 
@@ -1283,7 +1282,7 @@ nav {
   p {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: #200c42;
     margin-bottom: 0;
     text-align: left;
@@ -1340,7 +1339,7 @@ nav {
     position: absolute;
     z-index: -10000;
     height: 350px;
-    top: 306px;
+    top: 283px;
     left: 0;
   }
 
@@ -1599,6 +1598,10 @@ nav {
     li:last-of-type {
       margin-right: 0px;
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -1693,7 +1696,7 @@ nav {
 
     .typedHeight {
       height: 81px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     p {

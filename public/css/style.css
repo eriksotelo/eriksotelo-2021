@@ -268,7 +268,7 @@ nav {
   #mainSection p {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: #200c42;
     margin-bottom: 0; }
   #mainSection a {
@@ -350,7 +350,7 @@ nav {
     #mySkills .container p {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 17px;
       color: #200c42;
       margin-bottom: 60px; }
     #mySkills .container .skillBox {
@@ -369,7 +369,8 @@ nav {
       border-radius: 0 0 20px 20px; }
       #mySkills .container .skillDescription p {
         font-weight: 700;
-        margin-bottom: 0px; }
+        margin-bottom: 0px;
+        font-size: 16px; }
       #mySkills .container .skillDescription ul {
         list-style: none;
         display: inline; }
@@ -502,6 +503,8 @@ nav {
 #latestWork .container {
   padding-top: 60px;
   padding-bottom: 60px; }
+  #latestWork .container p {
+    font-size: 17px; }
   #latestWork .container a {
     text-decoration: none;
     color: #d30c7b;
@@ -753,10 +756,14 @@ nav {
       #latestWork .modal .modal-body .container p {
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 17px;
         color: #200c42;
         margin: 60px 0 40px 0;
         text-align: center; }
+      #latestWork .modal .modal-body .container .col-sm-8 p:first-of-type {
+        margin: 60px 0 30px 0; }
+      #latestWork .modal .modal-body .container .col-sm-8 p:nth-of-type(2) {
+        margin: 0 0 40px 0; }
     #latestWork .modal .modal-body .modal-outro p:first-of-type {
       text-align: center;
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
@@ -863,7 +870,7 @@ nav {
   #contactSection p {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 17px;
     color: #200c42;
     margin-bottom: 0;
     text-align: left; }
@@ -912,7 +919,7 @@ nav {
     position: absolute;
     z-index: -10000;
     height: 350px;
-    top: 306px;
+    top: 283px;
     left: 0; }
   #contactSection input.submit {
     margin: 0;
@@ -1062,6 +1069,8 @@ nav {
       transition: all 0.2s ease; }
     #footerSocialMedia ul li:last-of-type {
       margin-right: 0px; }
+    #footerSocialMedia ul a {
+      text-decoration: none; }
 
 .display {
   display: inline-block !important; }
@@ -1120,7 +1129,7 @@ nav {
       margin-left: 8px; }
     #mainSection .typedHeight {
       height: 81px;
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
     #mainSection p {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
