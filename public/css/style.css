@@ -42,7 +42,8 @@ body {
     body .container h2 {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
       font-size: 60px;
-      color: #200c42; }
+      color: #200c42;
+      margin-bottom: 15px; }
       body .container h2 span {
         color: #f8b827; }
     body .container h3 {
@@ -205,6 +206,12 @@ nav {
 #mainSection {
   width: 100%;
   overflow: hidden; }
+  #mainSection .hexagon {
+    position: absolute;
+    height: 175px;
+    bottom: -87.5px;
+    right: -50px;
+    opacity: 0.8; }
   #mainSection h1:first-of-type {
     color: #3f5cbf;
     font-size: 42px;
@@ -318,80 +325,89 @@ nav {
     opacity: 1;
     transition: all 0.2s ease; }
 
-#mySkills .container {
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  #mySkills .container h2 {
-    font-family: "BoubaRound-Black", "Poppins", sans-serif;
-    font-size: 60px;
-    color: #200c42; }
-    #mySkills .container h2 span {
-      color: #f8b827; }
-  #mySkills .container h3 {
-    font-family: "BoubaRound-Black", "Poppins", sans-serif;
-    font-size: 32px;
-    color: #3f5cbf; }
-  #mySkills .container p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #200c42;
-    margin-bottom: 60px; }
-  #mySkills .container .skillBox {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.15);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 363px;
-    width: 100%;
-    padding: 0; }
-  #mySkills .container .skillDescription {
-    border-top: solid 1px #e0e0e0;
-    padding: 0 40px 40px 40px;
-    background-color: #fff;
-    border-radius: 0 0 20px 20px; }
-    #mySkills .container .skillDescription p {
-      font-weight: 700;
-      margin-bottom: 0px; }
-    #mySkills .container .skillDescription ul {
-      list-style: none;
-      display: inline; }
-      #mySkills .container .skillDescription ul li {
-        display: inline-block; }
-      #mySkills .container .skillDescription ul li:first-of-type,
-      #mySkills .container .skillDescription ul li:nth-of-type(2) {
-        float: left; }
-      #mySkills .container .skillDescription ul li:nth-of-type(2) {
-        padding-left: 10px; }
-      #mySkills .container .skillDescription ul li:last-of-type {
-        float: right; }
-    #mySkills .container .skillDescription .likeSaveIcons {
-      margin: 40px 0 20px 0;
-      position: relative; }
-      #mySkills .container .skillDescription .likeSaveIcons button {
-        padding: 0;
-        background-color: transparent;
-        border: none; }
-      #mySkills .container .skillDescription .likeSaveIcons .heart {
-        stroke: #f45f5f;
-        fill: none;
-        height: 25px;
-        transition: all 0.2s ease; }
-      #mySkills .container .skillDescription .likeSaveIcons .likes {
-        font-family: "BoubaRound-Black", "Poppins", sans-serif;
-        font-size: 17px;
-        margin-left: 0px;
-        color: #3f5cbf;
-        left: 35px;
-        opacity: 0.75; }
-      #mySkills .container .skillDescription .likeSaveIcons .clickedHeart {
-        fill: #f45f5f;
-        transition: all 0.2s ease;
-        animation: 0.5s linear burst; }
-      #mySkills .container .skillDescription .likeSaveIcons .heart:target {
-        fill: #f45f5f;
-        animation: 0.5s linear burst; }
+#mySkills {
+  position: relative;
+  overflow: hidden; }
+  #mySkills .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    #mySkills .container .hexagon {
+      position: absolute;
+      height: 175px;
+      top: -87.5px;
+      right: -50px;
+      opacity: 0.8; }
+    #mySkills .container h2 {
+      font-family: "BoubaRound-Black", "Poppins", sans-serif;
+      font-size: 60px;
+      color: #200c42; }
+      #mySkills .container h2 span {
+        color: #f8b827; }
+    #mySkills .container h3 {
+      font-family: "BoubaRound-Black", "Poppins", sans-serif;
+      font-size: 32px;
+      color: #3f5cbf; }
+    #mySkills .container p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #200c42;
+      margin-bottom: 60px; }
+    #mySkills .container .skillBox {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 60px rgba(36, 139, 152, 0.15);
+      text-align: center;
+      margin: 0 auto;
+      max-width: 363px;
+      width: 100%;
+      padding: 0; }
+    #mySkills .container .skillDescription {
+      border-top: solid 1px #e0e0e0;
+      padding: 0 40px 40px 40px;
+      background-color: #fff;
+      border-radius: 0 0 20px 20px; }
+      #mySkills .container .skillDescription p {
+        font-weight: 700;
+        margin-bottom: 0px; }
+      #mySkills .container .skillDescription ul {
+        list-style: none;
+        display: inline; }
+        #mySkills .container .skillDescription ul li {
+          display: inline-block; }
+        #mySkills .container .skillDescription ul li:first-of-type,
+        #mySkills .container .skillDescription ul li:nth-of-type(2) {
+          float: left; }
+        #mySkills .container .skillDescription ul li:nth-of-type(2) {
+          padding-left: 10px; }
+        #mySkills .container .skillDescription ul li:last-of-type {
+          float: right; }
+      #mySkills .container .skillDescription .likeSaveIcons {
+        margin: 40px 0 20px 0;
+        position: relative; }
+        #mySkills .container .skillDescription .likeSaveIcons button {
+          padding: 0;
+          background-color: transparent;
+          border: none; }
+        #mySkills .container .skillDescription .likeSaveIcons .heart {
+          stroke: #f45f5f;
+          fill: none;
+          height: 25px;
+          transition: all 0.2s ease; }
+        #mySkills .container .skillDescription .likeSaveIcons .likes {
+          font-family: "BoubaRound-Black", "Poppins", sans-serif;
+          font-size: 17px;
+          margin-left: 0px;
+          color: #3f5cbf;
+          left: 35px;
+          opacity: 0.75; }
+        #mySkills .container .skillDescription .likeSaveIcons .clickedHeart {
+          fill: #f45f5f;
+          transition: all 0.2s ease;
+          animation: 0.5s linear burst; }
+        #mySkills .container .skillDescription .likeSaveIcons .heart:target {
+          fill: #f45f5f;
+          animation: 0.5s linear burst; }
 @keyframes burst {
   0%,
           10% {
@@ -412,45 +428,37 @@ nav {
     text-shadow: none; }
   100% {
     transform: rotate(-2.5deg); } }
-      #mySkills .container .skillDescription .likeSaveIcons .bookmark {
-        stroke: #f8b827;
-        fill: none;
-        height: 25px;
-        cursor: pointer;
-        transition: all 0.2s ease; }
-      #mySkills .container .skillDescription .likeSaveIcons .clickedBookmark {
-        fill: #f8b827;
-        transition: all 0.2s ease; }
-  #mySkills .container .iconBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-    height: 110px;
-    border-radius: 36px;
-    margin: 80px auto 80px auto;
-    transition: transform 0.5s ease-in-out; }
-    #mySkills .container .iconBox svg {
-      text-align: center; }
-  #mySkills .container .iconBox:hover {
-    transform: rotate(360deg) scale(0.8); }
-  #mySkills .container .designIcon {
-    background-color: #53d5e5;
-    box-shadow: 0px 7px 40px rgba(83, 213, 229, 0.7);
-    transition: all 0.7s ease; }
-  #mySkills .container .devIcon {
-    background-color: #f8b827;
-    box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
-    transition: all 0.7s ease; }
-  #mySkills .container .illustrationIcon {
-    background-color: #d30c7b;
-    box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
-    transition: all 0.7s ease; }
-  #mySkills .container .designIcon:hover,
-  #mySkills .container .illustrationIcon:hover,
-  #mySkills .container .devIcon:hover {
-    box-shadow: none;
-    transition: all 0.7s ease; }
+        #mySkills .container .skillDescription .likeSaveIcons .bookmark {
+          stroke: #f8b827;
+          fill: none;
+          height: 25px;
+          cursor: pointer;
+          transition: all 0.2s ease; }
+        #mySkills .container .skillDescription .likeSaveIcons .clickedBookmark {
+          fill: #f8b827;
+          transition: all 0.2s ease; }
+    #mySkills .container .iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 36px;
+      margin: 30px auto 30px auto;
+      transition: transform 0.5s ease-in-out; }
+      #mySkills .container .iconBox svg {
+        text-align: center; }
+    #mySkills .container .iconBox:hover {
+      transform: scale(0.8); }
+    #mySkills .container .designIcon {
+      transition: all 0.7s ease; }
+    #mySkills .container .devIcon {
+      transition: all 0.7s ease; }
+    #mySkills .container .illustrationIcon {
+      transition: all 0.7s ease; }
+    #mySkills .container .designIcon:hover,
+    #mySkills .container .illustrationIcon:hover,
+    #mySkills .container .devIcon:hover {
+      box-shadow: none;
+      transition: all 0.7s ease; }
 
 #parallaxMountain .container-fluid {
   min-height: 580px;
@@ -494,6 +502,13 @@ nav {
 #latestWork .container {
   padding-top: 60px;
   padding-bottom: 60px; }
+  #latestWork .container a {
+    text-decoration: none;
+    color: #d30c7b;
+    transition: all 0.2s ease; }
+  #latestWork .container a:hover {
+    opacity: 0.6;
+    transition: all 0.2s ease; }
   #latestWork .container .projectWrapper {
     border-radius: 20px;
     margin-bottom: 60px;
@@ -646,12 +661,17 @@ nav {
   #latestWork .container .projectImg6::after,
   #latestWork .container .projectImg6::before {
     border-radius: 0 20px 20px 0; }
+#latestWork .projectImg1:after {
+  background: url("../img/portfolio-website-preview.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat; }
 #latestWork .projectImg2:after {
   background: url("../img/podcast-logo-preview.png") !important;
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat; }
-#latestWork .projectImg6:after {
+#latestWork .projectImg3:after {
   background: url("../img/ebook-preview.png") !important;
   background-position: center !important;
   background-size: cover !important;
@@ -1624,6 +1644,29 @@ nav {
 
   .burger-container {
     display: inline-block; }
+
+  #latestWork .btn-yellow {
+    color: #fff; }
+  #latestWork .btn-yellow::before {
+    width: 200px; }
+
+  #contactSection input.submit {
+    color: #fff; }
+  #contactSection a::before {
+    width: 220px; } }
+@media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  #mainSection a {
+    color: #fff; }
+  #mainSection a::before {
+    width: 220px; }
+  #mainSection .bolt {
+    opacity: 1;
+    display: none; }
+    #mainSection .bolt svg {
+      stroke-width: 1.5px;
+      fill: #fff; }
+  #mainSection .yellowDots {
+    bottom: -120px; }
 
   #latestWork .btn-yellow {
     color: #fff; }

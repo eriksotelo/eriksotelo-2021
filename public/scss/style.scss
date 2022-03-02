@@ -54,6 +54,7 @@ body {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
       font-size: 60px;
       color: #200c42;
+      margin-bottom: 15px;
 
       span {
         color: #f8b827;
@@ -315,6 +316,14 @@ nav {
   width: 100%;
   overflow: hidden;
 
+  .hexagon {
+    position: absolute;
+    height: 175px;
+    bottom: -87.5px;
+    right: -50px;
+    opacity: 0.8;
+  }
+
   h1:first-of-type {
     color: #3f5cbf;
     font-size: 42px;
@@ -478,6 +487,9 @@ nav {
 }
 
 #mySkills {
+  position: relative;
+  overflow: hidden;
+
   .container {
     // .row {
     //   --bs-gutter-x: 1.5rem;
@@ -495,6 +507,14 @@ nav {
 
     padding-top: 60px;
     padding-bottom: 60px;
+
+    .hexagon {
+      position: absolute;
+      height: 175px;
+      top: -87.5px;
+      right: -50px;
+      opacity: 0.8;
+    }
 
     h2 {
       font-family: "BoubaRound-Black", "Poppins", sans-serif;
@@ -666,10 +686,8 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 110px;
-      height: 110px;
       border-radius: 36px;
-      margin: 80px auto 80px auto;
+      margin: 30px auto 30px auto;
       transition: transform 0.5s ease-in-out;
 
       svg {
@@ -678,24 +696,24 @@ nav {
     }
 
     .iconBox:hover {
-      transform: rotate(360deg) scale(0.8);
+      transform: scale(0.8);
     }
 
     .designIcon {
-      background-color: #53d5e5;
-      box-shadow: 0px 7px 40px rgba(83, 213, 229, 0.7);
+      // background-color: #53d5e5;
+      // box-shadow: 0px 7px 40px rgba(83, 213, 229, 0.7);
       transition: all 0.7s ease;
     }
 
     .devIcon {
-      background-color: #f8b827;
-      box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
+      // background-color: #f8b827;
+      // box-shadow: 0px 7px 40px rgba(248, 184, 39, 0.7);
       transition: all 0.7s ease;
     }
 
     .illustrationIcon {
-      background-color: #d30c7b;
-      box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
+      // background-color: #d30c7b;
+      // box-shadow: 0px 7px 40px rgba(211, 12, 123, 0.7);
       transition: all 0.7s ease;
     }
 
@@ -766,6 +784,17 @@ nav {
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    a {
+      text-decoration: none;
+      color: #d30c7b;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
 
     .projectWrapper {
       border-radius: 20px;
@@ -970,6 +999,13 @@ nav {
     // }
   }
 
+  .projectImg1:after {
+    background: url("../img/portfolio-website-preview.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+
   .projectImg2:after {
     background: url("../img/podcast-logo-preview.png") !important;
     background-position: center !important;
@@ -977,7 +1013,7 @@ nav {
     background-repeat: no-repeat;
   }
 
-  .projectImg6:after {
+  .projectImg3:after {
     background: url("../img/ebook-preview.png") !important;
     background-position: center !important;
     background-size: cover !important;
@@ -2498,6 +2534,49 @@ nav {
 
   .burger-container {
     display: inline-block;
+  }
+
+  #latestWork {
+    .btn-yellow {
+      color: #fff;
+    }
+
+    .btn-yellow::before {
+      width: 200px;
+    }
+  }
+
+  #contactSection {
+    input.submit {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  #mainSection {
+    a {
+      color: #fff;
+    }
+    a::before {
+      width: 220px;
+    }
+    .bolt {
+      opacity: 1;
+      display: none;
+
+      svg {
+        stroke-width: 1.5px;
+        fill: #fff;
+      }
+    }
+
+    .yellowDots {
+      bottom: -120px;
+    }
   }
 
   #latestWork {
