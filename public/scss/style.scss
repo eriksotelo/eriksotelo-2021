@@ -1011,6 +1011,13 @@ nav {
     background-repeat: no-repeat;
   }
 
+  .projectImg4:after {
+    background: url("../img/vr-movie-app-preview.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+
   .modal {
     padding-top: 40px;
     z-index: 10000;

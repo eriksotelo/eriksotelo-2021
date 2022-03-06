@@ -679,6 +679,11 @@ nav {
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat; }
+#latestWork .projectImg4:after {
+  background: url("../img/vr-movie-app-preview.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat; }
 #latestWork .modal {
   padding-top: 40px;
   z-index: 10000; }
