@@ -2043,6 +2043,9 @@ nav {
 
   #mySkills {
     .container {
+      .col-sm-8:first-of-type {
+        width: 100%;
+      }
       h2 {
         font-size: 52px;
       }
@@ -2110,6 +2113,9 @@ nav {
 
   #latestWork {
     .container {
+      .col-sm-8:first-of-type {
+        width: 100%;
+      }
       h2 {
         font-size: 52px;
       }

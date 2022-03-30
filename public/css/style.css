@@ -1349,6 +1349,8 @@ nav {
   .burger-container {
     display: inline-block; }
 
+  #mySkills .container .col-sm-8:first-of-type {
+    width: 100%; }
   #mySkills .container h2 {
     font-size: 52px; }
   #mySkills .container .skillBox {
@@ -1395,6 +1397,8 @@ nav {
       top: 40%;
       z-index: 3; }
 
+  #latestWork .container .col-sm-8:first-of-type {
+    width: 100%; }
   #latestWork .container h2 {
     font-size: 52px; }
 
